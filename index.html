@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+
+<html lang="en-GB">
+
+<head>
+
+        
+        <!-- Meta -->
+        <meta charset="UTF-8">        <!-- Viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+	<!-- This site is optimized with the Yoast SEO plugin v15.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>FashionBrain - Predicting upcoming fashion trends.</title>
+	<meta name="description" content="FashionBrain aims to support the fashion industry by predicting upcoming fashion trends and providing personalized recommendations to customers." />
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<link rel="canonical" href="./index.html" />
+	<meta property="og:locale" content="en_GB" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="FashionBrain - Predicting upcoming fashion trends." />
+	<meta property="og:description" content="FashionBrain aims to support the fashion industry by predicting upcoming fashion trends and providing personalized recommendations to customers." />
+	<meta property="og:url" content="./" />
+	<meta property="og:site_name" content="FashionBrain" />
+	<meta property="article:modified_time" content="2019-12-27T22:17:13+00:00" />
+	<meta property="og:image" content="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2018/04/5000200-flag-cl.jpg" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:label1" value="Written by">
+	<meta name="twitter:data1" value="Rob Ellerington">
+	<meta name="twitter:label2" value="Estimated reading time">
+	<meta name="twitter:data2" value="1 minute">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"./#organization","name":"FashionBrain Project","url":"./","sameAs":[],"logo":{"@type":"ImageObject","@id":"./#logo","inLanguage":"en-GB","url":"./wp-content/uploads/2017/03/logo.png","width":600,"height":185,"caption":"FashionBrain Project"},"image":{"@id":"./#logo"}},{"@type":"WebSite","@id":"./#website","url":"./","name":"FashionBrain","description":"FashionBrain: Understanding Europe\u2019s Fashion Data Universe","publisher":{"@id":"./#organization"},"potentialAction":[{"@type":"SearchAction","target":"./?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-GB"},{"@type":"ImageObject","@id":"./#primaryimage","inLanguage":"en-GB","url":"./wp-content/uploads/2018/04/5000200-flag-cl.jpg","width":150,"height":100},{"@type":"WebPage","@id":"./#webpage","url":"./","name":"FashionBrain - Predicting upcoming fashion trends.","isPartOf":{"@id":"./#website"},"about":{"@id":"./#organization"},"primaryImageOfPage":{"@id":"./#primaryimage"},"datePublished":"2017-03-08T10:19:22+00:00","dateModified":"2019-12-27T22:17:13+00:00","description":"FashionBrain aims to support the fashion industry by predicting upcoming fashion trends and providing personalized recommendations to customers.","inLanguage":"en-GB","potentialAction":[{"@type":"ReadAction","target":["./"]}]}]}</script>
+	<meta name="google-site-verification" content="f63yitAQfOdGdgc-MV6hYjCXf4axoOJTZln606FP-N4" />
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//cdn.datatables.net' />
+<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+<link rel='dns-prefetch' href='//www.google.com' />
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel='dns-prefetch' href='//maxcdn.bootstrapcdn.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='stylesheet' id='lps-style-css'  href='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/plugins/latest-post-shortcode/lps-block/../assets/css/style.min.css?ver=9.65' type='text/css' media='' />
+<link rel='stylesheet' id='lps-slick-style-css'  href='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/plugins/latest-post-shortcode/lps-block/../assets/css/slick-custom-theme.min.css?ver=9.65' type='text/css' media='' />
+<link rel='stylesheet' id='lps-slick-css'  href='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/plugins/latest-post-shortcode/lps-block/../assets/slick-1.8.1/slick.min.css?ver=9.65' type='text/css' media='' />
+<link rel='stylesheet' id='mo-wp-style-icon-css'  href='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/plugins/miniorange-login-openid/includes/css/mo_openid_login_icons.css?version=7.3.0&#038;ver=5.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='mo_openid_admin_settings_phone_style-css'  href='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/plugins/miniorange-login-openid/includes/css/phone.css?ver=5.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='mo-wp-bootstrap-social-css'  href='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/plugins/miniorange-login-openid/includes/css/bootstrap-social.css?ver=5.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='mo-wp-bootstrap-main-css'  href='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/plugins/miniorange-login-openid/includes/css/bootstrap.min-preview.css?ver=5.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='mo-openid-sl-wp-font-awesome-css'  href='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/plugins/miniorange-login-openid/includes/css/mo-font-awesome.min.css?ver=5.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap_style_ass-css'  href='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/plugins/miniorange-login-openid/includes/css/mo_openid_bootstrap-tour-standalone.css?version=5.1.4&#038;ver=5.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-includes/css/dist/block-library/style.min.css?ver=5.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-includes/css/dist/block-library/theme.min.css?ver=5.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='latest-post-shortcode-lps-block-css'  href='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/plugins/latest-post-shortcode/lps-block/style.css?ver=1603974580' type='text/css' media='all' />
+<link rel='stylesheet' id='iw-latest-posts-css'  href='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/plugins/inkandwater-iw-latest-posts-1b966275919b/public/css/iw-latest-posts-public.min.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery-datatables-css'  href='https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css?ver=5.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='datatables-buttons-css'  href='https://cdn.datatables.net/buttons/1.6.1/css/buttons.dataTables.min.css?ver=5.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='datatables-select-css'  href='https://cdn.datatables.net/select/1.3.1/css/select.dataTables.min.css?ver=5.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='datatables-fixedheader-css'  href='https://cdn.datatables.net/fixedheader/3.1.6/css/fixedHeader.dataTables.min.css?ver=5.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='datatables-fixedcolumns-css'  href='https://cdn.datatables.net/fixedcolumns/3.3.0/css/fixedColumns.dataTables.min.css?ver=5.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='datatables-responsive-css'  href='https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css?ver=5.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='iw-featured-pages-css'  href='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/plugins/iw-featured-pages/public/css/iw-featured-pages-public.min.css?ver=1.0.2' type='text/css' media='all' />
+<link rel='stylesheet' id='iw-team-css'  href='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/plugins/iw-team/public/css/iw-team-public.min.css?ver=1.2.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wpt-twitter-feed-css'  href='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/plugins/wp-to-twitter/css/twitter-feed.css?ver=5.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='ez-icomoon-css'  href='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/plugins/easy-table-of-contents/vendor/icomoon/style.min.css?ver=2.0.11' type='text/css' media='all' />
+<link rel='stylesheet' id='ez-toc-css'  href='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/plugins/easy-table-of-contents/assets/css/screen.min.css?ver=2.0.11' type='text/css' media='all' />
+<style id='ez-toc-inline-css' type='text/css'>
+div#ez-toc-container p.ez-toc-title {font-size: 120%;}div#ez-toc-container p.ez-toc-title {font-weight: 500;}div#ez-toc-container ul li {font-size: 95%;}div#ez-toc-container {width: 75%;}
+</style>
+<link rel='stylesheet' id='parent-style-css'  href='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/themes/IW-Signature/style.css?ver=5.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css?ver=5.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='iw_signature_style-css'  href='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/themes/fashion-brain/style.css?ver=1' type='text/css' media='all' />
+<style id='iw_signature_style-inline-css' type='text/css'>
+.home.custom-background .site-hero { background-image: url('./wp-content/uploads/2018/03/Front-page-logo-removed.jpg'); background-repeat: no-repeat; background-position-x: center; background-position-y: center; background-attachment: scroll; background-size: cover; }.home.custom-background .site-hero .hero-overlay { background-color: rgba(0,0,0,0.47); }
+@media screen and (max-width: 75em) { .home .site-header { background-color:#191919; } } .home .site-header.sticky { background-color:#191919;}body:not(.home) .site-header { background-color: #191919; }body { color:#3f3f3f; } .site-hero { color:#ffffff;}a {color: #f16823;}a:hover, a:active, a:focus{color:#f25000;}.button, input[type='submit'] { background: #f16823; } .button.hollow { border-color: #f16823; color: #f16823 }.button:hover, .button:active, .button:focus, input[type='submit']:hover { background: #f16823; } .button.hollow:hover, .button.hollow:active, .button.hollow:focus { border-color: #f16823; color: #f16823 }.content-four { background-color: #3d3d3d; }.content-five { background-color: #efefef; }.site-footer { background-color: #f16823; }.site-footer { color: #ffffff; }.site-footer-credits { background-color: #1e1e1e; }
+.site-header .site-title a { background-image: url(./wp-content/uploads/2017/03/logo-white.png) }
+</style>
+<script type='text/javascript' src='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/plugins/latest-post-shortcode/lps-block/../assets/slick-1.8.1/slick.min.js?ver=9.65' id='lps-slick-js'></script>
+<script type='text/javascript' src='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/plugins/miniorange-login-openid/includes/js/jquery.cookie.min.js?ver=5.5.2' id='js-cookie-script-js'></script>
+<script type='text/javascript' src='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/plugins/miniorange-login-openid/includes/js/social_login.js?ver=5.5.2' id='mo-social-login-script-js'></script>
+<script type='text/javascript' src='https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js?ver=5.5.2' id='jquery-datatables-js'></script>
+<script type='text/javascript' src='https://cdn.datatables.net/buttons/1.6.1/js/dataTables.buttons.min.js?ver=5.5.2' id='datatables-buttons-js'></script>
+<script type='text/javascript' src='//cdn.datatables.net/buttons/1.6.1/js/buttons.colVis.min.js?ver=5.5.2' id='datatables-buttons-colvis-js'></script>
+<script type='text/javascript' src='//cdn.datatables.net/buttons/1.6.1/js/buttons.print.min.js?ver=5.5.2' id='datatables-buttons-print-js'></script>
+<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js?ver=5.5.2' id='pdfmake-js'></script>
+<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js?ver=5.5.2' id='pdfmake-fonts-js'></script>
+<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js?ver=5.5.2' id='jszip-js'></script>
+<script type='text/javascript' src='//cdn.datatables.net/buttons/1.6.1/js/buttons.html5.min.js?ver=5.5.2' id='datatables-buttons-html5-js'></script>
+<script type='text/javascript' src='https://cdn.datatables.net/select/1.3.1/js/dataTables.select.min.js?ver=5.5.2' id='datatables-select-js'></script>
+<script type='text/javascript' src='https://cdn.datatables.net/fixedheader/3.1.6/js/dataTables.fixedHeader.min.js?ver=5.5.2' id='datatables-fixedheader-js'></script>
+<script type='text/javascript' src='https://cdn.datatables.net/fixedcolumns/3.3.0/js/dataTables.fixedColumns.min.js?ver=5.5.2' id='datatables-fixedcolumns-js'></script>
+<script type='text/javascript' src='https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js?ver=5.5.2' id='datatables-responsive-js'></script>
+<script type='text/javascript' id='igsv-datatables-js-extra'>
+/* <![CDATA[ */
+var igsv_plugin_vars = {"lang_dir":".\/wp-content\/plugins\/inline-google-spreadsheet-viewer\/languages","datatables_classes":".igsv-table:not(.no-datatables)","datatables_defaults_object":{"dom":"B<'clear'>lfrtip","buttons":["colvis","copy","csv","excel","pdf","print"]}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/plugins/inline-google-spreadsheet-viewer/igsv-datatables.js?ver=5.5.2' id='igsv-datatables-js'></script>
+<script type='text/javascript' src='//www.google.com/jsapi?ver=5.5.2' id='google-ajax-api-js'></script>
+<script type='text/javascript' src='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/plugins/inline-google-spreadsheet-viewer/igsv-gvizcharts.js?ver=5.5.2' id='igsv-gvizcharts-js'></script>
+<script type='text/javascript' src='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/themes/fashion-brain/assets/js/wf-loader-config.min.js?ver=5.5.2' id='wf-loader-js'></script>
+<script type='text/javascript' src='https://www.googletagmanager.com/gtag/js?id=UA-96193896-1' id='google_gtagjs-js' async></script>
+<script type='text/javascript' id='google_gtagjs-js-after'>
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('set', 'developer_id.dZTNiMT', true);
+gtag('config', 'UA-96193896-1', {"anonymize_ip":true} );
+</script>
+<link rel="https://api.w.org/" href="./wp-json/index.html" /><link rel="alternate" type="application/json" href="./wp-json/wp/v2/pages/5/index.html" /><link rel="alternate" type="application/json+oembed" href="./wp-json/oembed/1.0/embed/index.html?url=https%3A%2F%2F%2F" />
+<link rel="alternate" type="text/xml+oembed" href="./wp-json/oembed/1.0/embed/index.html?url=https%3A%2F%2F%2F&#038;format=xml" />
+<meta name="generator" content="Site Kit by Google 1.19.0" /><link rel="icon" href="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/cropped-logo-white-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/cropped-logo-white-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/cropped-logo-white-180x180.png" />
+<meta name="msapplication-TileImage" content="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/cropped-logo-white-270x270.png" />
+
+</head>
+
+<body class="home page-template-default page page-id-5 custom-background loading" id="./" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+
+    
+    <div class="hfeed site" id="site-top">
+
+        
+        <header class="site-header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+            <div class="content-wrapper">
+                <div class="content-inner">
+
+                    
+        <div class="site-branding" id="site-branding">
+
+            <h1 class="site-title" itemprop="headline">
+                <a href="./index.html" rel="home">FashionBrain</a>
+            </h1>
+            <h2 class="site-description screen-reader-text" itemprop="description">
+                FashionBrain: Understanding Europe’s Fashion Data Universe            </h2>
+
+        </div>
+
+        
+            <div class="site-navigation" id="site-navigation" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+
+                <a class="menu-toggle" id="menu-toggle">
+
+                                                            <span class="menu-toggle-text">Menu</span>                    <i class="fa fa-bars"></i>
+                </a>
+
+                <div class="main-menu"><ul id="menu-menu-1" class="menu"><li id="menu-item-30" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-30"><a title="scroll-to-content" href="#content-main" itemprop="url">About</a></li>
+<li id="menu-item-140" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-140"><a title="scroll-to-content" href="#content-four" itemprop="url">News</a></li>
+<li id="menu-item-31" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-31"><a title="scroll-to-content" href="#content-five" itemprop="url">Team</a></li>
+<li id="menu-item-510" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-510"><a href="./project-achievements/index.html" itemprop="url">Achievements</a></li>
+<li id="menu-item-2687" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2687"><a href="./data-ethics-and-privacy/index.html" itemprop="url">Data Ethics and Privacy</a></li>
+<li id="menu-item-33" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33"><a title="scroll-to-content" href="#content-footer" itemprop="url">Contact</a></li>
+</ul></div>
+            </div>
+
+        
+                </div>
+            </div>
+        </header><!-- .site-header -->
+
+        
+            <div class="site-hero">
+
+                <div class="site-hero-center">
+
+                    
+                        
+                            <div class="content-wrapper">
+                                <h1 class="site-tagline" data-responsive-tagline>FashionBrain: Understanding Europe’s Fashion Data Universe</h1>                            </div>
+
+                        
+                    
+                <div class="site-nav-arrow">
+                    <a href="#site-content" title="scroll-to-content" class="scroll-to-content"><i class="fa fa-2x fa-arrow-down"></i></a>
+                </div>
+
+            
+                </div>
+
+                <div class="hero-overlay"></div>
+
+            </div>
+
+        
+        
+        <div class="site-content" id="site-content">
+
+        
+<div class="content-area">
+
+    <main class="site-main" itemscope="itemscope" itemtype="http://schema.org/Blog">
+
+        
+        <div id="content-main" class="content-main" role="main" data-waypoint-section>
+
+            
+                <!-- Open The Loop -->
+                
+                    
+                    
+                        
+                            
+                                <!-- Page Begin -->
+                                
+
+    <article id="post-5" class="post-5 page type-page status-publish hentry" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+
+        <div class="entry-content">
+
+            <h2 class="entry-title">Project Aims</h2>            <p>&nbsp;</p>
+<p>The FashionBrain project is a €2.8m three year project funded by the European Commission&#8217;s Horizon 2020 programme. The project is being led by Dr Alessandro Checco and involves several partners from across Europe, including the Beuth University of Applied Sciences, Universite de Fribourg, Zalando SE, Fashwell AG and MonetDB Solutions B.V.</p>
+<p>The FashionBrain project aims at combining data from different sources to support different fashion industry players by predicting upcoming fashion trends from social media as well as by providing personalised recommendations and advanced fashion item search to customers.</p>
+<p><img loading="lazy" class="alignnone size-full wp-image-198" src="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2018/04/5000200-flag-cl.jpg" alt="" width="150" height="100" /></p>
+<p>This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 732328</p>
+<p><img loading="lazy" class="wp-image-134 aligncenter" src="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/Big-Data-Logo-300x77.png" alt="" width="234" height="60" srcset="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/Big-Data-Logo-300x77.png 300w, https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/Big-Data-Logo-768x197.png 768w, https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/Big-Data-Logo.png 812w" sizes="(max-width: 234px) 100vw, 234px" /></p>
+<h2>More Details</h2>
+<p><a href="./wp-content/uploads/2019/02/D7.1-Factsheet-v3_Feb19.pdf">FashionBrain Factsheet</a></p>
+<p><a href="./wp-content/uploads/2018/09/FashionBrain-15min-Jan2017-v2.pdf">FashionBrain Project Presentation</a></p>
+<p><a href="./wp-content/uploads/2018/09/fashionbrain_poster.pdf">FashionBrain Project Poster</a></p>
+<p><a href="https://arxiv.org/pdf/1710.09788.pdf">FashionBrain Project Vision Paper</a></p>
+<p><a href="./wp-content/uploads/2018/09/FashionBrain-Leaflet.pdf">FashionBrain Project Leaflet</a></p>
+<p><a href="./wp-content/uploads/2019/12/FashionBrain_Glossary.pdf">FashionBrain Glossary</a></p>
+<p><a href="./wp-content/uploads/2019/06/FashionBrain-Technology.pdf">FashionBrain Technology</a></p>
+
+        </div><!-- .entry-content -->
+
+    </article><!-- #post-## -->
+
+                                <!-- Page End -->
+
+                            
+                        
+                    
+                    
+                                <!-- Close The Loop -->
+
+            
+        </div><!-- .content-main -->
+
+        
+        
+        
+
+    
+    <div id="content-one" class="widgets content-one" role="complementary" itemscope="itemscope" itemtype="http://schema.org/WPSideBar" data-waypoint-section>
+
+        
+    </div><!-- .content-two -->
+
+    
+    <div id="content-two" class="widgets content-two" role="complementary" itemscope="itemscope" itemtype="http://schema.org/WPSideBar" data-waypoint-section>
+
+        
+    </div><!-- .content-two -->
+
+    
+        <div id="iw-featured-pages-one" role="complementary" data-waypoint-section>
+
+            
+                <div class="widget-area" role="complementary">
+                    <aside id="iw_featured_page-2" class="widget widget_iw_featured_page iw-featured-widget-area iw-featured-widget-area-one"><div class="iw-featured-page-reverse-layout">
+<article class="iw-featured-page">
+
+    <header class="iw-featured-page-entry-header" data-equal-height>
+        <div class="iw-featured-page-content">
+                        <p>A core business of Europe’s fashion industry is to acquire a deep understanding of customer needs and to predict next trends. Search engines and social networks are often used as a bridge between the customer&#8217;s potential purchase decision and the retailer. In order to reinforce Europe&#8217;s position in the fashion industry and better exploit its distinctive characteristics e.g., multiple languages, fashion and cultural differences, it is pivotal to reduce its dependence to search engines.</p>
+<p>This goal can be achieved by harnessing various data channels that retailers can leverage in order to gain more insight about potential buyers, and on the industry trends as a whole. The main outcome of the FashionBrain project is the improvement of the fashion industry value chain obtained thanks to the creation of novel on­line shopping experiences, the detection of influencers, and the prediction of upcoming fashion trends. Tangible outcomes will include software, demonstrators, and novel algorithms for a data-­driven fashion industry.</p>
+        </div>
+    </header>
+    <aside class="iw-featured-page-entry-image" data-equal-height style="background-image: url( ./wp-content/uploads/2017/03/toa-heftiba-195132.jpg )">
+
+    </aside>
+
+</article></div></aside><aside id="iw_featured_page-3" class="widget widget_iw_featured_page iw-featured-widget-area iw-featured-widget-area-one">
+<article class="iw-featured-page">
+
+    <header class="iw-featured-page-entry-header" data-equal-height>
+        <div class="iw-featured-page-content">
+                        <p>The FashionBrain project targets the two main actors of the fashion industry, i.e., the retailers and the customers. We propose to gather and combine the sheer amount of data generated by (emanating from) different fashion industry multisectorial players, starting from manufacturers and distribution networks, to online shops, large retailers, and value-added services companies (e.g., social media analysis, market observers, call centers, press/magazines etc).</p>
+<p>The gathered data will be curated, analyzed and used as input for machines learning algorithms. The outcome of the project will benefit retailers by providing novel services to their customers in order to improve their shopping experience and boost their loyalty. For example, a customer will be able to receive personalized recommendations and perform advanced fashion items search by image, complex textual description, etc. Also, a retailer will be able to compose a marketing story about a product that fits the customer’s taste, instead of merely showing an item and its price.</p>
+        </div>
+    </header>
+    <aside class="iw-featured-page-entry-image" data-equal-height style="background-image: url( ./wp-content/uploads/2018/03/Front-page-bag-logo-removed.jpg )">
+
+    </aside>
+
+</article></aside><aside id="iw_featured_page-4" class="widget widget_iw_featured_page iw-featured-widget-area iw-featured-widget-area-one"><div class="iw-featured-page-reverse-layout">
+<article class="iw-featured-page">
+
+    <header class="iw-featured-page-entry-header" data-equal-height>
+        <div class="iw-featured-page-content">
+            <h3 class="iw-featured-page-entry-title">Work Packages &#038; Public Deliverables</h3>            <p>The FashionBrain project is structured into 9 Work Packages (WPs) including technical (WP1-6) and administrative (WP7-9) WPs. The list of project deliverables which are open to the public together with the partner leading its work are linked to below.</p>
+<p><a class="button" href="./publicdeliverables/index.html">View work packages &amp; public deliverables</a></p>
+<p><img loading="lazy" class="wp-image-115 aligncenter" src="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/WP-structure-300x211.png" alt="" width="400" height="281" srcset="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/WP-structure-300x211.png 300w, https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/WP-structure-768x540.png 768w, https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/WP-structure-1024x721.png 1024w, https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/WP-structure.png 1046w" sizes="(max-width: 400px) 100vw, 400px" /></p>
+        </div>
+    </header>
+    <aside class="iw-featured-page-entry-image" data-equal-height style="background-image: url( ./wp-content/uploads/2020/01/Group-photo-Jan-2018-web-2.jpg )">
+
+    </aside>
+
+</article></div></aside>                </div><!-- .widget-area -->
+            
+            
+        </div>
+
+    
+        <div id="iw-featured-pages-two" role="complementary" data-waypoint-section>
+
+            
+        </div>
+
+    
+    <div id="content-three" class="widgets content-three" role="complementary" itemscope="itemscope" itemtype="http://schema.org/WPSideBar" data-waypoint-section>
+
+        
+            <div class="widget-area content-wrapper" role="complementary">
+                <aside id="media_video-3" class="widget widget_media_video"><h2 class="widget-title">FashionBrain in 2 minutes</h2><div style="width:100%;" class="wp-video"><!--[if lt IE 9]><script>document.createElement('video');</script><![endif]-->
+<video class="wp-video-shortcode" id="video-75-1" preload="metadata" controls="controls"><source type="video/youtube" src="https://www.youtube.com/watch?v=xRjauLN4ulQ&#038;_=1" /><a href="https://www.youtube.com/watch?v=xRjauLN4ulQ">https://www.youtube.com/watch?v=xRjauLN4ulQ</a></video></div></aside>            </div><!-- .widget-area -->
+
+        
+    </div><!-- .content-three -->
+
+    
+    <div id="content-four" class="widgets content-four" role="complementary" itemscope="itemscope" itemtype="http://schema.org/WPSideBar" data-waypoint-section>
+
+        
+            <div class="widget-area content-wrapper" role="complementary">
+                <aside id="iw_latest_posts-4" class="widget widget_iw_latest_posts"><h2 class="widget-title">Latest News</h2><div class="latest-posts-masonry latest-posts-dark-style"><div class="grid-sizer"></div>
+<article class="latest-posts-post post-3034 post type-post status-publish format-standard hentry category-latest-news" id="3034">
+
+    <header class="latest-posts-entry-header">
+
+        <a href="./public-deliverables-news/index.html" title="Public Deliverables">
+                    </a>
+
+    </header>
+
+    <div class="latest-posts-entry-content">
+
+        <h1 class="entry-title"><a href="./public-deliverables-news/index.html" rel="bookmark">Public Deliverables</a></h1>        <div class="entry-date"><small>Jan 18, 2021</small></div>        
+    </div>
+
+    <footer class="latest-posts-entry-footer">
+        <a href="./public-deliverables-news/index.html" title="Public Deliverables">Read More</a>    </footer>
+
+</article>
+<article class="latest-posts-post post-2996 post type-post status-publish format-standard hentry category-latest-news" id="2996">
+
+    <header class="latest-posts-entry-header">
+
+        <a href="./conclusions-understanding-europes-fashion-data-universe/index.html" title="Conclusions &#8211; Understanding Europe’s Fashion Data Universe">
+                    </a>
+
+    </header>
+
+    <div class="latest-posts-entry-content">
+
+        <h1 class="entry-title"><a href="./conclusions-understanding-europes-fashion-data-universe/index.html" rel="bookmark">Conclusions &#8211; Understanding Europe’s Fashion Data Universe</a></h1>        <div class="entry-date"><small>Jun 03, 2020</small></div>        
+    </div>
+
+    <footer class="latest-posts-entry-footer">
+        <a href="./conclusions-understanding-europes-fashion-data-universe/index.html" title="Conclusions &#8211; Understanding Europe’s Fashion Data Universe">Read More</a>    </footer>
+
+</article>
+<article class="latest-posts-post post-2975 post type-post status-publish format-standard hentry category-latest-news" id="2975">
+
+    <header class="latest-posts-entry-header">
+
+        <a href="./fashionbrain-showcase/index.html" title="FashionBrain Showcase">
+                    </a>
+
+    </header>
+
+    <div class="latest-posts-entry-content">
+
+        <h1 class="entry-title"><a href="./fashionbrain-showcase/index.html" rel="bookmark">FashionBrain Showcase</a></h1>        <div class="entry-date"><small>Feb 04, 2020</small></div>        
+    </div>
+
+    <footer class="latest-posts-entry-footer">
+        <a href="./fashionbrain-showcase/index.html" title="FashionBrain Showcase">Read More</a>    </footer>
+
+</article>
+<article class="latest-posts-post post-2895 post type-post status-publish format-standard hentry category-latest-news" id="2895">
+
+    <header class="latest-posts-entry-header">
+
+        <a href="./monetdb-solutions-appoints-niels-nes-as-cto/index.html" title="MonetDB Solutions appoints Niels Nes as CTO">
+                    </a>
+
+    </header>
+
+    <div class="latest-posts-entry-content">
+
+        <h1 class="entry-title"><a href="./monetdb-solutions-appoints-niels-nes-as-cto/index.html" rel="bookmark">MonetDB Solutions appoints Niels Nes as CTO</a></h1>        <div class="entry-date"><small>Nov 08, 2019</small></div>        
+    </div>
+
+    <footer class="latest-posts-entry-footer">
+        <a href="./monetdb-solutions-appoints-niels-nes-as-cto/index.html" title="MonetDB Solutions appoints Niels Nes as CTO">Read More</a>    </footer>
+
+</article>
+<article class="latest-posts-post post-2889 post type-post status-publish format-standard hentry category-latest-news" id="2889">
+
+    <header class="latest-posts-entry-header">
+
+        <a href="./when-experience-counts-crowd-worker-strategies-in-relevance-judgment-tasks/index.html" title="When Experience Counts: Crowd Worker Strategies in Relevance Judgment Tasks">
+                    </a>
+
+    </header>
+
+    <div class="latest-posts-entry-content">
+
+        <h1 class="entry-title"><a href="./when-experience-counts-crowd-worker-strategies-in-relevance-judgment-tasks/index.html" rel="bookmark">When Experience Counts: Crowd Worker Strategies in Relevance Judgment Tasks</a></h1>        <div class="entry-date"><small>Oct 14, 2019</small></div>        
+    </div>
+
+    <footer class="latest-posts-entry-footer">
+        <a href="./when-experience-counts-crowd-worker-strategies-in-relevance-judgment-tasks/index.html" title="When Experience Counts: Crowd Worker Strategies in Relevance Judgment Tasks">Read More</a>    </footer>
+
+</article>
+<article class="latest-posts-post post-2877 post type-post status-publish format-standard hentry category-latest-news" id="2877">
+
+    <header class="latest-posts-entry-header">
+
+        <a href="./demo-on-textual-image-search/index.html" title="Demo on textual image search">
+                    </a>
+
+    </header>
+
+    <div class="latest-posts-entry-content">
+
+        <h1 class="entry-title"><a href="./demo-on-textual-image-search/index.html" rel="bookmark">Demo on textual image search</a></h1>        <div class="entry-date"><small>Oct 10, 2019</small></div>        
+    </div>
+
+    <footer class="latest-posts-entry-footer">
+        <a href="./demo-on-textual-image-search/index.html" title="Demo on textual image search">Read More</a>    </footer>
+
+</article>
+<article class="latest-posts-post post-2886 post type-post status-publish format-standard hentry category-latest-news" id="2886">
+
+    <header class="latest-posts-entry-header">
+
+        <a href="./the-impact-of-task-abandonment-in-crowdsourcing-2/index.html" title="The Impact of Task Abandonment in Crowdsourcing">
+                    </a>
+
+    </header>
+
+    <div class="latest-posts-entry-content">
+
+        <h1 class="entry-title"><a href="./the-impact-of-task-abandonment-in-crowdsourcing-2/index.html" rel="bookmark">The Impact of Task Abandonment in Crowdsourcing</a></h1>        <div class="entry-date"><small>Oct 07, 2019</small></div>        
+    </div>
+
+    <footer class="latest-posts-entry-footer">
+        <a href="./the-impact-of-task-abandonment-in-crowdsourcing-2/index.html" title="The Impact of Task Abandonment in Crowdsourcing">Read More</a>    </footer>
+
+</article>
+<article class="latest-posts-post post-2880 post type-post status-publish format-standard hentry category-latest-news" id="2880">
+
+    <header class="latest-posts-entry-header">
+
+        <a href="./the-impact-of-task-abandonment-in-crowdsourcing/index.html" title="Platform-related Factors in Repeatability and Reproducibility of Crowdsourcing Tasks">
+                    </a>
+
+    </header>
+
+    <div class="latest-posts-entry-content">
+
+        <h1 class="entry-title"><a href="./the-impact-of-task-abandonment-in-crowdsourcing/index.html" rel="bookmark">Platform-related Factors in Repeatability and Reproducibility of Crowdsourcing Tasks</a></h1>        <div class="entry-date"><small>Oct 07, 2019</small></div>        
+    </div>
+
+    <footer class="latest-posts-entry-footer">
+        <a href="./the-impact-of-task-abandonment-in-crowdsourcing/index.html" title="Platform-related Factors in Repeatability and Reproducibility of Crowdsourcing Tasks">Read More</a>    </footer>
+
+</article>
+<article class="latest-posts-post post-2859 post type-post status-publish format-standard hentry category-latest-news" id="2859">
+
+    <header class="latest-posts-entry-header">
+
+        <a href="./press-release-monetdb-solutions-secures-an-investment-from-servicenow/index.html" title="Press Release: MonetDB Solutions Secures an Investment from ServiceNow">
+                    </a>
+
+    </header>
+
+    <div class="latest-posts-entry-content">
+
+        <h1 class="entry-title"><a href="./press-release-monetdb-solutions-secures-an-investment-from-servicenow/index.html" rel="bookmark">Press Release: MonetDB Solutions Secures an Investment from ServiceNow</a></h1>        <div class="entry-date"><small>Oct 01, 2019</small></div>        
+    </div>
+
+    <footer class="latest-posts-entry-footer">
+        <a href="./press-release-monetdb-solutions-secures-an-investment-from-servicenow/index.html" title="Press Release: MonetDB Solutions Secures an Investment from ServiceNow">Read More</a>    </footer>
+
+</article></div><div class="latest-posts-archive-link latest-posts-dark-style"><a class="latest-posts-button" href="./category/latest-news/index.html" rel="bookmark" title="Arhive Link">View More</a></aside>            </div><!-- .widget-area -->
+
+        
+    </div><!-- .content-four -->
+
+    
+    <div id="content-five" class="widgets content-five" role="complementary" itemscope="itemscope" itemtype="http://schema.org/WPSideBar" data-waypoint-section>
+
+        
+            <div class="widget-area content-wrapper" role="complementary">
+                <aside id="iw_team-2" class="widget widget_iw_team"><h2 class="widget-title">The FashionBrain Team</h2><div class="iw-team-wrapper">
+<article class="post-518 iw-team type-iw-team status-publish has-post-thumbnail hentry">
+
+    <header class="team-wrapper">
+
+        
+            <div class="team-thumbnail">
+
+                <img width="200" height="200" src="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2018/09/Alan-Akbik-BW-e1537799515703.jpg" class="iw-team-image wp-post-image" alt="" loading="lazy" />
+            </div>
+
+        
+        <h4 class="entry-title">Alan Akbik</h4>
+        <h5 class="entry-role">Zalando</h5>
+        <a href="./team/alan-akbik/index.html" class="overlay-link" rel="bookmark"></a>
+    </header>
+
+</article>
+<article class="post-515 iw-team type-iw-team status-publish has-post-thumbnail hentry">
+
+    <header class="team-wrapper">
+
+        
+            <div class="team-thumbnail">
+
+                <img width="200" height="200" src="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2018/09/benjamin_winter-e1537790045373.jpg" class="iw-team-image wp-post-image" alt="" loading="lazy" srcset="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2018/09/benjamin_winter-e1537790045373.jpg 200w, https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2018/09/benjamin_winter-e1537790045373-150x150.jpg 150w, https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2018/09/benjamin_winter-e1537790045373-50x50.jpg 50w" sizes="(max-width: 200px) 100vw, 200px" />
+            </div>
+
+        
+        <h4 class="entry-title">Benjamin Winter</h4>
+        <h5 class="entry-role">Beuth University</h5>
+        <a href="./team/benjamin-winter/index.html" class="overlay-link" rel="bookmark"></a>
+    </header>
+
+</article>
+<article class="post-2635 iw-team type-iw-team status-publish has-post-thumbnail hentry">
+
+    <header class="team-wrapper">
+
+        
+            <div class="team-thumbnail">
+
+                <img width="172" height="200" src="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2018/12/Dick_Jennifer-BW-e1545225489966.jpg" class="iw-team-image wp-post-image" alt="" loading="lazy" />
+            </div>
+
+        
+        <h4 class="entry-title">Dr Jennifer Dick</h4>
+        <h5 class="entry-role">University of Sheffield</h5>
+        <a href="./team/dr-jennifer-dick/index.html" class="overlay-link" rel="bookmark"></a>
+    </header>
+
+</article>
+<article class="post-19 iw-team type-iw-team status-publish has-post-thumbnail hentry">
+
+    <header class="team-wrapper">
+
+        
+            <div class="team-thumbnail">
+
+                <img width="200" height="200" src="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/gianluca.jpg" class="iw-team-image wp-post-image" alt="" loading="lazy" srcset="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/gianluca.jpg 200w, https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/gianluca-150x150.jpg 150w, https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/gianluca-50x50.jpg 50w" sizes="(max-width: 200px) 100vw, 200px" />
+            </div>
+
+        
+        <h4 class="entry-title">Dr. Gianluca Demartini</h4>
+        <h5 class="entry-role">University of Sheffield</h5>
+        <a href="./team/dr-gianluca-demartini/index.html" class="overlay-link" rel="bookmark"></a>
+    </header>
+
+</article>
+<article class="post-143 iw-team type-iw-team status-publish has-post-thumbnail hentry">
+
+    <header class="team-wrapper">
+
+        
+            <div class="team-thumbnail">
+
+                <img width="200" height="200" src="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/09/Paul-Clough-BW.jpg" class="iw-team-image wp-post-image" alt="" loading="lazy" srcset="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/09/Paul-Clough-BW.jpg 200w, https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/09/Paul-Clough-BW-150x150.jpg 150w, https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/09/Paul-Clough-BW-50x50.jpg 50w" sizes="(max-width: 200px) 100vw, 200px" />
+            </div>
+
+        
+        <h4 class="entry-title">Prof. Paul Clough</h4>
+        <h5 class="entry-role">University of Sheffield</h5>
+        <a href="./team/professor-paul-clough/index.html" class="overlay-link" rel="bookmark"></a>
+    </header>
+
+</article>
+<article class="post-2719 iw-team type-iw-team status-publish has-post-thumbnail hentry">
+
+    <header class="team-wrapper">
+
+        
+            <div class="team-thumbnail">
+
+                <img width="200" height="200" src="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2019/01/Tom-e1548675360853.png" class="iw-team-image wp-post-image" alt="" loading="lazy" />
+            </div>
+
+        
+        <h4 class="entry-title">Tom Oberhauser</h4>
+        <h5 class="entry-role">Beuth University</h5>
+        <a href="./team/tom-oberhauser/index.html" class="overlay-link" rel="bookmark"></a>
+    </header>
+
+</article>
+<article class="post-57 iw-team type-iw-team status-publish has-post-thumbnail hentry">
+
+    <header class="team-wrapper">
+
+        
+            <div class="team-thumbnail">
+
+                <img width="200" height="200" src="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/alessandro.jpg" class="iw-team-image wp-post-image" alt="" loading="lazy" srcset="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/alessandro.jpg 200w, https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/alessandro-150x150.jpg 150w, https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/alessandro-50x50.jpg 50w" sizes="(max-width: 200px) 100vw, 200px" />
+            </div>
+
+        
+        <h4 class="entry-title">Dr. Alessandro Checco</h4>
+        <h5 class="entry-role">University of Sheffield</h5>
+        <a href="./team/alessandro-checco/index.html" class="overlay-link" rel="bookmark"></a>
+    </header>
+
+</article>
+<article class="post-60 iw-team type-iw-team status-publish has-post-thumbnail hentry">
+
+    <header class="team-wrapper">
+
+        
+            <div class="team-thumbnail">
+
+                <img width="200" height="200" src="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/kathryn.jpg" class="iw-team-image wp-post-image" alt="" loading="lazy" srcset="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/kathryn.jpg 200w, https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/kathryn-150x150.jpg 150w, https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/kathryn-50x50.jpg 50w" sizes="(max-width: 200px) 100vw, 200px" />
+            </div>
+
+        
+        <h4 class="entry-title">Kathryn Mackellar</h4>
+        <h5 class="entry-role">University of Sheffield</h5>
+        <a href="./team/kathryn-mackellar/index.html" class="overlay-link" rel="bookmark"></a>
+    </header>
+
+</article>
+<article class="post-63 iw-team type-iw-team status-publish has-post-thumbnail hentry">
+
+    <header class="team-wrapper">
+
+        
+            <div class="team-thumbnail">
+
+                <img width="200" height="200" src="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/mourad.jpg" class="iw-team-image wp-post-image" alt="" loading="lazy" srcset="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/mourad.jpg 200w, https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/mourad-150x150.jpg 150w, https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/mourad-50x50.jpg 50w" sizes="(max-width: 200px) 100vw, 200px" />
+            </div>
+
+        
+        <h4 class="entry-title">Dr. Mourad Khayati</h4>
+        <h5 class="entry-role">University of Fribourg</h5>
+        <a href="./team/mourad-khayati/index.html" class="overlay-link" rel="bookmark"></a>
+    </header>
+
+</article>
+<article class="post-59 iw-team type-iw-team status-publish has-post-thumbnail hentry">
+
+    <header class="team-wrapper">
+
+        
+            <div class="team-thumbnail">
+
+                <img width="200" height="200" src="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/ines.jpg" class="iw-team-image wp-post-image" alt="" loading="lazy" srcset="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/ines.jpg 200w, https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/ines-150x150.jpg 150w, https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/ines-50x50.jpg 50w" sizes="(max-width: 200px) 100vw, 200px" />
+            </div>
+
+        
+        <h4 class="entry-title">Ines Arous</h4>
+        <h5 class="entry-role">University of Fribourg</h5>
+        <a href="./team/ines-arous/index.html" class="overlay-link" rel="bookmark"></a>
+    </header>
+
+</article>
+<article class="post-14 iw-team type-iw-team status-publish has-post-thumbnail hentry">
+
+    <header class="team-wrapper">
+
+        
+            <div class="team-thumbnail">
+
+                <img width="200" height="200" src="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/philippe.jpg" class="iw-team-image wp-post-image" alt="" loading="lazy" srcset="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/philippe.jpg 200w, https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/philippe-150x150.jpg 150w, https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/philippe-50x50.jpg 50w" sizes="(max-width: 200px) 100vw, 200px" />
+            </div>
+
+        
+        <h4 class="entry-title">Prof. Philippe Cudre-Mauroux</h4>
+        <h5 class="entry-role">University of Fribourg</h5>
+        <a href="./team/14-2/index.html" class="overlay-link" rel="bookmark"></a>
+    </header>
+
+</article>
+<article class="post-70 iw-team type-iw-team status-publish has-post-thumbnail hentry">
+
+    <header class="team-wrapper">
+
+        
+            <div class="team-thumbnail">
+
+                <img width="200" height="200" src="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/yingzhang.jpg" class="iw-team-image wp-post-image" alt="" loading="lazy" srcset="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/yingzhang.jpg 200w, https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/yingzhang-150x150.jpg 150w, https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/yingzhang-50x50.jpg 50w" sizes="(max-width: 200px) 100vw, 200px" />
+            </div>
+
+        
+        <h4 class="entry-title">Dr. Ying Zhang (Jennie)</h4>
+        <h5 class="entry-role">MonetDB Solutions</h5>
+        <a href="./team/ying-zhang-jennie/index.html" class="overlay-link" rel="bookmark"></a>
+    </header>
+
+</article>
+<article class="post-113 iw-team type-iw-team status-publish has-post-thumbnail hentry">
+
+    <header class="team-wrapper">
+
+        
+            <div class="team-thumbnail">
+
+                <img width="200" height="200" src="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/Marko-Jocic.jpg" class="iw-team-image wp-post-image" alt="" loading="lazy" srcset="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/Marko-Jocic.jpg 200w, https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/Marko-Jocic-150x150.jpg 150w, https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/Marko-Jocic-50x50.jpg 50w" sizes="(max-width: 200px) 100vw, 200px" />
+            </div>
+
+        
+        <h4 class="entry-title">Marko Jocić</h4>
+        <h5 class="entry-role">Fashwell</h5>
+        <a href="./team/marko-jocic/index.html" class="overlay-link" rel="bookmark"></a>
+    </header>
+
+</article>
+<article class="post-61 iw-team type-iw-team status-publish has-post-thumbnail hentry">
+
+    <header class="team-wrapper">
+
+        
+            <div class="team-thumbnail">
+
+                <img width="200" height="200" src="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/matthias.jpg" class="iw-team-image wp-post-image" alt="" loading="lazy" srcset="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/matthias.jpg 200w, https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/matthias-150x150.jpg 150w, https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/matthias-50x50.jpg 50w" sizes="(max-width: 200px) 100vw, 200px" />
+            </div>
+
+        
+        <h4 class="entry-title">Matthias Dantone</h4>
+        <h5 class="entry-role">Fashwell</h5>
+        <a href="./team/matthias-dantone/index.html" class="overlay-link" rel="bookmark"></a>
+    </header>
+
+</article>
+<article class="post-66 iw-team type-iw-team status-publish has-post-thumbnail hentry">
+
+    <header class="team-wrapper">
+
+        
+            <div class="team-thumbnail">
+
+                <img width="200" height="200" src="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/martin.jpg" class="iw-team-image wp-post-image" alt="" loading="lazy" srcset="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/martin.jpg 200w, https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/martin-150x150.jpg 150w, https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/martin-50x50.jpg 50w" sizes="(max-width: 200px) 100vw, 200px" />
+            </div>
+
+        
+        <h4 class="entry-title">Prof. Martin Kersten</h4>
+        <h5 class="entry-role">MonetDB Solutions</h5>
+        <a href="./team/prof-martin-kersten/index.html" class="overlay-link" rel="bookmark"></a>
+    </header>
+
+</article>
+<article class="post-69 iw-team type-iw-team status-publish has-post-thumbnail hentry">
+
+    <header class="team-wrapper">
+
+        
+            <div class="team-thumbnail">
+
+                <img width="200" height="200" src="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/svetlin.jpg" class="iw-team-image wp-post-image" alt="" loading="lazy" srcset="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/svetlin.jpg 200w, https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/svetlin-150x150.jpg 150w, https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/svetlin-50x50.jpg 50w" sizes="(max-width: 200px) 100vw, 200px" />
+            </div>
+
+        
+        <h4 class="entry-title">Svetlin Stalinov</h4>
+        <h5 class="entry-role">MonetDB Solutions</h5>
+        <a href="./team/svetlin-stalinov/index.html" class="overlay-link" rel="bookmark"></a>
+    </header>
+
+</article>
+<article class="post-65 iw-team type-iw-team status-publish has-post-thumbnail hentry">
+
+    <header class="team-wrapper">
+
+        
+            <div class="team-thumbnail">
+
+                <img width="200" height="200" src="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/loser.jpg" class="iw-team-image wp-post-image" alt="" loading="lazy" srcset="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/loser.jpg 200w, https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/loser-150x150.jpg 150w, https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/loser-50x50.jpg 50w" sizes="(max-width: 200px) 100vw, 200px" />
+            </div>
+
+        
+        <h4 class="entry-title">Prof. Alexander Löser</h4>
+        <h5 class="entry-role">Beuth University</h5>
+        <a href="./team/prof-alexander-loser/index.html" class="overlay-link" rel="bookmark"></a>
+    </header>
+
+</article>
+<article class="post-58 iw-team type-iw-team status-publish has-post-thumbnail hentry">
+
+    <header class="team-wrapper">
+
+        
+            <div class="team-thumbnail">
+
+                <img width="200" height="200" src="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/gers.jpg" class="iw-team-image wp-post-image" alt="" loading="lazy" srcset="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/gers.jpg 200w, https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/gers-150x150.jpg 150w, https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/gers-50x50.jpg 50w" sizes="(max-width: 200px) 100vw, 200px" />
+            </div>
+
+        
+        <h4 class="entry-title">Prof. Felix Gers</h4>
+        <h5 class="entry-role">Beuth University</h5>
+        <a href="./team/felix-gers/index.html" class="overlay-link" rel="bookmark"></a>
+    </header>
+
+</article>
+<article class="post-68 iw-team type-iw-team status-publish has-post-thumbnail hentry">
+
+    <header class="team-wrapper">
+
+        
+            <div class="team-thumbnail">
+
+                <img width="200" height="200" src="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/roland.jpg" class="iw-team-image wp-post-image" alt="" loading="lazy" srcset="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/roland.jpg 200w, https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/roland-150x150.jpg 150w, https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/roland-50x50.jpg 50w" sizes="(max-width: 200px) 100vw, 200px" />
+            </div>
+
+        
+        <h4 class="entry-title">Dr Roland Vollgraf</h4>
+        <h5 class="entry-role">Zalando Research</h5>
+        <a href="./team/roland-vollgraf/index.html" class="overlay-link" rel="bookmark"></a>
+    </header>
+
+</article></div></aside><aside id="ipw-2" class="widget widget_ipw"><div data-post-id='429' class='insert-page insert-page-429'><h1 style="text-align: center;">FashionBrain Ethics Committee</h1>
+<h4>The FashionBrain Project Ethics Committee consists of the following members</h4>
+<p><span class="il">Natasha</span> <span class="il">Whiteman </span>&#8211; Associate Professor of Media and Communication, <a href="http://www2.le.ac.uk/departments/media/people/natasha-whiteman">University of Leicester</a></p>
+<p>Alessandro Bozzon &#8211; Assistant Professor in Web Information Systems, <a href="http://alessandrobozzon.com/">Delft University of Technology</a></p>
+<p>Kristian Hildebrand &#8211; Professor in Graphics and Interactive Systems, <a href="http://hildebrand.beuth-hochschule.de/">Beuth University of Applied Science</a></p>
+<p>Paul Reilly &#8211; Senior Lecturer in Social Media and Digital Society, <a href="http://www.sheffield.ac.uk/is/staff/reilly">University of Sheffield</a></p>
+<p>The Ethics committee works in collaboration with the Sheffield <a href="https://www.sheffield.ac.uk/rs/committees/ethicscommittee">University Research Ethics Committee (UREC)</a>.</p>
+</div></aside><aside id="text-11" class="widget widget_text">			<div class="textwidget"><h1 style="text-align: center;"><a href="./the-fashionbrain-consortium/index.html">Click here for more information on the consortium</a></h1>
+</div>
+		</aside>            </div><!-- .widget-area -->
+
+        
+    </div><!-- .content-five -->
+
+    
+    <div id="content-six" class="widgets content-six" role="complementary" itemscope="itemscope" itemtype="http://schema.org/WPSideBar" data-waypoint-section>
+
+        
+            <div class="widget-area content-wrapper" role="complementary">
+                <aside id="ipw-3" class="widget widget_ipw"><div data-post-id='435' class='insert-page insert-page-435'><h1 class='insert-page-title'>Project Output Status Charts</h1><div id="igsv-0-Columnchart-1cUTwj2yi2Q6XkGrxEJV6zmaarN9Lp06RhuHXqJ6Yj9g" class="igsv-chart" title="Published Articles as of today" style="min-height:450px;" data-chart-type="Column" data-datasource-href="https://docs.google.com/spreadsheets/d/1cUTwj2yi2Q6XkGrxEJV6zmaarN9Lp06RhuHXqJ6Yj9g/gviz/tq?tqx=out:csv&amp;tq=select%20E%2C%20count%28E%29%20group%20by%20E&amp;headers=0&amp;gid=1513082599&amp;chart=true" data-chart-legend='{"position": "none"}'></div>
+<div id="igsv-1-Columnchart-1cUTwj2yi2Q6XkGrxEJV6zmaarN9Lp06RhuHXqJ6Yj9g" class="igsv-chart" title="Industrial Events Participation as of today" style="min-height:450px;" data-chart-type="Column" data-datasource-href="https://docs.google.com/spreadsheets/d/1cUTwj2yi2Q6XkGrxEJV6zmaarN9Lp06RhuHXqJ6Yj9g/gviz/tq?tqx=out:csv&amp;tq=select%20E%2C%20count%28E%29%20group%20by%20E&amp;headers=0&amp;gid=221842958&amp;chart=true" data-chart-legend='{"position": "none"}'></div>
+<p><div id="igsv-2-Columnchart-1cUTwj2yi2Q6XkGrxEJV6zmaarN9Lp06RhuHXqJ6Yj9g" class="igsv-chart" title="Academic Events Participation as of today" style="min-height:450px;" data-chart-type="Column" data-datasource-href="https://docs.google.com/spreadsheets/d/1cUTwj2yi2Q6XkGrxEJV6zmaarN9Lp06RhuHXqJ6Yj9g/gviz/tq?tqx=out:csv&amp;tq=select%20B%2C%20count%28B%29%20group%20by%20B&amp;headers=0&amp;gid=1429370410&amp;chart=true" data-chart-legend='{"position": "none"}'></div><br />
+<div id="igsv-3-Columnchart-1cUTwj2yi2Q6XkGrxEJV6zmaarN9Lp06RhuHXqJ6Yj9g" class="igsv-chart" title="Press Releases as of today" style="min-height:450px;" data-chart-type="Column" data-datasource-href="https://docs.google.com/spreadsheets/d/1cUTwj2yi2Q6XkGrxEJV6zmaarN9Lp06RhuHXqJ6Yj9g/gviz/tq?tqx=out:csv&amp;tq=select%20D%2C%20count%28D%29%20group%20by%20D&amp;headers=0&amp;gid=1106383115&amp;chart=true" data-chart-legend='{"position": "none"}'></div></p>
+<div id="igsv-4-Columnchart-1cUTwj2yi2Q6XkGrxEJV6zmaarN9Lp06RhuHXqJ6Yj9g" class="igsv-chart" title="Other Dissemination Events as of today" style="min-height:450px;" data-chart-type="Column" data-datasource-href="https://docs.google.com/spreadsheets/d/1cUTwj2yi2Q6XkGrxEJV6zmaarN9Lp06RhuHXqJ6Yj9g/gviz/tq?tqx=out:csv&amp;tq=select%20E%2C%20count%28E%29%20group%20by%20E&amp;headers=0&amp;gid=1049272618&amp;chart=true" data-chart-legend='{"position": "none"}'></div>
+</div></aside><aside id="text-7" class="widget widget_text">			<div class="textwidget"><p><a class="twitter-timeline" href="https://twitter.com/FashionBrain1?ref_src=twsrc%5Etfw">Tweets by FashionBrain1</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><br />
+<a href="https://twitter.com/FashionBrain1?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @FashionBrain1</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+</div>
+		</aside>            </div><!-- .widget-area -->
+
+        
+    </div><!-- .content-six -->
+
+    
+
+        
+    </main><!-- .site-main -->
+
+</div><!-- .content-area -->
+
+
+    
+    </div><!-- .content -->
+
+    
+    
+    <footer class="site-footer" id="content-footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+
+        
+        <div class="site-footer-widget-areas">
+
+            <div class="footer-widget-areas">
+
+                <div class="footer-widget-area footer-widget-area--left">
+                    <aside id="text-2" class="widget widget_text site-footer-left"><h6 class="widget-title">Contact</h6>			<div class="textwidget"><p>For enquiries, please contact:</p>
+<p>Alessandro Checco, University of Sheffield<br />
+Email: a.checco@sheffield.ac.uk</p>
+<p><i class="fa fa-twitter" aria-hidden="true"></i> <a href="https://twitter.com/FashionBrain1">@FashionBrain1</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</div>
+		</aside>                </div>
+
+                <div class="footer-widget-area footer-widget-area--middle">
+                                    </div>
+
+                <div class="footer-widget-area footer-widget-area--middle">
+                    <aside id="text-4" class="widget widget_text site-footer-middle">			<div class="textwidget"><p><img src="https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/uploads/2017/03/tuos-300x119.jpg" alt="" width="300" height="119" class="alignnone size-medium wp-image-97" /></p>
+</div>
+		</aside>                </div>
+
+                <div class="footer-widget-area footer-widget-area--right">
+                                    </div>
+
+            </div>
+
+        </div>
+
+    
+        <div class="site-footer-credits">
+
+            <ul class="site-credits no-bullet">
+
+                <li>&copy; Copyright 2021 <a href="./index.html" rel="index">FashionBrain</a></li>                <li>An Ink & Water <a href="http://signature.inkandwater.co.uk/" target="_blank">Signature Site</a>
+            </ul>
+
+        </div>
+
+    
+    </footer><!-- .site-footer -->
+
+    
+</div><!-- .page -->
+
+<link rel='stylesheet' id='mediaelement-css'  href='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.13-9993131' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css'  href='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=5.5.2' type='text/css' media='all' />
+<script type='text/javascript' id='lps-ajax-pagination-js-js-extra'>
+/* <![CDATA[ */
+var LPS = {"ajaxurl":".\/wp-admin\/admin-ajax.php"};
+var LPS = {"ajaxurl":".\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/plugins/latest-post-shortcode/lps-block/../assets/js/custom-pagination.min.js?ver=9.6520201029.1230' id='lps-ajax-pagination-js-js'></script>
+<script type='text/javascript' src='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js'></script>
+<script type='text/javascript' src='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-includes/js/masonry.min.js?ver=4.2.2' id='masonry-js'></script>
+<script type='text/javascript' src='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-includes/js/jquery/jquery.masonry.min.js?ver=3.1.2b' id='jquery-masonry-js'></script>
+<script type='text/javascript' src='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/plugins/inkandwater-iw-latest-posts-1b966275919b/public/js/iw-latest-posts-public.min.js?ver=1.0.0' id='iw-latest-posts-js'></script>
+<script type='text/javascript' src='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/plugins/iw-featured-pages/includes/jquery-match-height/dist/jquery.matchHeight-min.js?ver=1.0.2' id='jquery-match-height-js'></script>
+<script type='text/javascript' src='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/plugins/iw-featured-pages/public/js/iw-featured-pages-public.min.js?ver=1.0.2' id='iw-featured-pages-js'></script>
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.2.0/jquery.fittext.min.js' id='fittext-js'></script>
+<script type='text/javascript' src='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/themes/IW-Signature/js/vendor.min.js' id='foundation-js'></script>
+<script type='text/javascript' src='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-content/themes/IW-Signature/js/global.min.js' id='main-js'></script>
+<script type='text/javascript' src='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-includes/js/wp-embed.min.js?ver=5.5.2' id='wp-embed-js'></script>
+<script type='text/javascript' id='mediaelement-core-js-before'>
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+</script>
+<script type='text/javascript' src='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.13-9993131' id='mediaelement-core-js'></script>
+<script type='text/javascript' src='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=5.5.2' id='mediaelement-migrate-js'></script>
+<script type='text/javascript' id='mediaelement-js-extra'>
+/* <![CDATA[ */
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=5.5.2' id='wp-mediaelement-js'></script>
+<script type='text/javascript' src='https://lcjptizmzu-flywheel.netdna-ssl.com/wp-includes/js/mediaelement/renderers/vimeo.min.js?ver=4.2.13-9993131' id='mediaelement-vimeo-js'></script>
+
+</body>
+</html>
