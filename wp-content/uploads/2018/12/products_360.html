@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>FashionBrain product recognition and tagging</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+              integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+              crossorigin="anonymous">
+
+    </head>
+
+
+    <body>
+        <div >
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>IG image</th>
+                        <th>Recognized products and tags</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><img src="https://www.instagram.com/p/BflljGijHHS/media/?size=t"/></td><td><table><tbody><tr><td><img src="http://i1.ztat.net/large/PI/92/2E/A1/1A/11/PI922EA11-A11@12.1.jpg" height="150px;" /></td><td><ul><li><b>category = denim_pants</b></li></ul></td><td><img src="http://i1.ztat.net/large/SH/F2/2A/00/3O/11/SHF22A003-O11@23.jpg" height="150px;" /></td><td><ul><li><b>category = jackets_coats</b></li></ul></td><td><img src="http://i1.ztat.net/large/VA/11/2K/00/6O/11/VA112K006-O11@4.jpg" height="150px;" /></td><td><ul><li><b>category = shoes</b></li></ul></td></tr></tbody></table></td></tr>
+<tr><td><img src="https://www.instagram.com/p/BflllCMhsmi/media/?size=t"/></td><td><table><tbody><tr><td><img src="http://i1.ztat.net/large/M2/92/1L/01/FQ/11/M2921L01F-Q11@12.jpg" height="150px;" /></td><td><ul><li><b>category = jackets_coats</b></li></ul></td><td><img src="http://i1.ztat.net/large/7F/12/1N/0B/5K/11/7F121N0B5-K11@12.jpg" height="150px;" /></td><td><ul><li><b>category = denim_pants</b></li></ul></td><td><img src="http://i1.ztat.net/large/ST/H5/1H/03/KQ/11/STH51H03K-Q11@37.jpg" height="150px;" /></td><td><ul><li><b>category = accessories/bags</b></li></ul></td></tr></tbody></table></td></tr>
+<tr><td><img src="https://www.instagram.com/p/BflmIlxle79/media/?size=t"/></td><td><table><tbody><tr><td><img src="http://i1.ztat.net/large/JP/05/1K/01/RQ/11/JP051K01R-Q11@5.jpg" height="150px;" /></td><td><ul><li><b>category = accessories/eyewear</b></li></ul></td><td><img src="http://i1.ztat.net/large/OA/22/1T/00/6I/11/OA221T006-I11@12.jpg" height="150px;" /></td><td><ul><li><b>category = female/jumpsuits_playsuits</b></li></ul></td><td><img src="http://i1.ztat.net/large/ES/11/1N/03/2Q/11/ES111N032-Q11@1.2.jpg" height="150px;" /></td><td><ul><li><b>category = shoes_pair</b></li></ul></td></tr></tbody></table></td></tr>
+<tr><td><img src="https://www.instagram.com/p/BflnBzShEw-/media/?size=t"/></td><td><table><tbody><tr><td><img src="http://i1.ztat.net/large/RI/92/1B/03/LK/11/RI921B03L-K11@2.jpg" height="150px;" /></td><td><ul><li><b>category = female/skirts</b></li></ul></td><td><img src="http://i1.ztat.net/large/BE/J2/1D/00/OJ/11/BEJ21D00O-J11@19.jpg" height="150px;" /></td><td><ul><li><b>category = female/swimwear</b></li></ul></td></tr></tbody></table></td></tr>
+<tr><td><img src="https://www.instagram.com/p/BflnxFWhsni/media/?size=t"/></td><td><table><tbody><tr><td><img src="http://i1.ztat.net/large/AR/11/1N/03/JO/11/AR111N03J-O11@3.2.jpg" height="150px;" /></td><td><ul><li><b>category = shoes_pair</b></li></ul></td><td><img src="http://i1.ztat.net/large/CL/61/2O/00/6M/11/CL612O006-M11@12.jpg" height="150px;" /></td><td><ul><li><b>category = shoes_pair</b></li></ul></td><td><img src="http://i1.ztat.net/large/WM/12/2T/00/9K/11/WM122T009-K11@15.1.jpg" height="150px;" /></td><td><ul><li><b>category = jumpers_cardigans</b></li></ul></td></tr></tbody></table></td></tr>
+<tr><td><img src="https://www.instagram.com/p/Bflo6QOh5ml/media/?size=t"/></td><td><table><tbody><tr><td><img src="http://i1.ztat.net/large/TI/52/2F/01/1A/11/TI522F011-A11@18.jpg" height="150px;" /></td><td><ul><li><b>category = male/shirts</b></li></ul></td><td><img src="http://i1.ztat.net/large/PO/25/2K/01/3K/11/PO252K013-K11@5.1.jpg" height="150px;" /></td><td><ul><li><b>category = accessories/eyewear</b></li></ul></td><td><img src="http://i1.ztat.net/large/ET/85/2R/00/ZK/11/ET852R00Z-K11@6.1.jpg" height="150px;" /></td><td><ul><li><b>category = accessories/ties</b></li></ul></td><td><img src="http://i1.ztat.net/large/M3/I2/2E/01/TC/11/M3I22E01T-C11@18.jpg" height="150px;" /></td><td><ul><li><b>category = denim_pants</b></li></ul></td><td><img src="http://i1.ztat.net/large/A1/82/2A/02/EO/11/A1822A02E-O11@16.1.jpg" height="150px;" /></td><td><ul><li><b>category = jackets_coats</b></li></ul></td></tr></tbody></table></td></tr>
+<tr><td><img src="https://www.instagram.com/p/BfloKvjn9Kv/media/?size=t"/></td><td><table><tbody><tr><td><img src="https://mosaic01.ztat.net/vgs/media/large/L8/85/1H/01/LB/11/L8851H01L-B11@12.jpg" height="150px;" /></td><td><ul><li><b>category = accessories/bags</b></li></ul></td><td><img src="http://i1.ztat.net/large/SN/58/1G/00/3G/11/SN581G003-G11@14.jpg" height="150px;" /></td><td><ul><li><b>category = female/swimwear</b></li></ul></td></tr></tbody></table></td></tr>
+<tr><td><img src="https://www.instagram.com/p/BfltCdnnOAD/media/?size=t"/></td><td><table><tbody><tr><td><img src="http://i1.ztat.net/large/GU/12/1N/0D/GK/11/GU121N0DG-K11@2.2.jpg" height="150px;" /></td><td><ul><li><b>category = denim_pants</b></li></ul></td><td><img src="http://i1.ztat.net/large/AE/91/1N/01/VB/11/AE911N01V-B11@14.jpg" height="150px;" /></td><td><ul><li><b>category = shoes</b></li></ul></td></tr></tbody></table></td></tr>
+<tr><td><img src="https://www.instagram.com/p/Bflv-aiHn1A/media/?size=t"/></td><td><table><tbody><tr><td><img src="http://i1.ztat.net/large/OB/12/1A/03/LQ/11/OB121A03L-Q11@2.jpg" height="150px;" /></td><td><ul><li><b>category = denim_pants</b></li></ul></td><td><img src="http://i1.ztat.net/large/AD/58/10/00/NA/11/AD581000N-A11@6.jpg" height="150px;" /></td><td><ul><li><b>category = accessories/eyewear</b></li></ul></td><td><img src="http://i1.ztat.net/large/GP/02/1I/05/XQ/11/GP021I05X-Q11@2.png" height="150px;" /></td><td><ul><li><b>category = jumpers_cardigans</b></li></ul></td><td><img src="http://i1.ztat.net/large/AR/C5/1H/01/KQ/11/ARC51H01K-Q11@10.jpg" height="150px;" /></td><td><ul><li><b>category = accessories/bags</b></li></ul></td></tr></tbody></table></td></tr>
+<tr><td><img src="https://www.instagram.com/p/BflvNudBlTg/media/?size=t"/></td><td><table><tbody><tr><td><img src="http://i1.ztat.net/large/DP/58/1G/00/4Q/11/DP581G004-Q11@12.jpg" height="150px;" /></td><td><ul><li><b>category = female/swimwear</b></li></ul></td></tr></tbody></table></td></tr>
+<tr><td><img src="https://www.instagram.com/p/BflwU1LBisA/media/?size=t"/></td><td><table><tbody><tr><td><img src="http://i1.ztat.net/large/DI/12/1N/04/DK/14/DI121N04D-K14@18.jpg" height="150px;" /></td><td><ul><li><b>category = denim_pants</b></li></ul></td><td><img src="http://i1.ztat.net/large/GU/12/1I/0B/5B/11/GU121I0B5-B11@4.1.jpg" height="150px;" /></td><td><ul><li><b>category = jumpers_cardigans</b></li></ul></td></tr></tbody></table></td></tr>
+<tr><td><img src="https://www.instagram.com/p/BflxJReHDZi/media/?size=t"/></td><td><table><tbody><tr><td><img src="https://mosaic01.ztat.net/vgs/media/large/LS/15/1K/00/4Q/11/LS151K004-Q11@8.jpg" height="150px;" /></td><td><ul><li><b>category = accessories/eyewear</b></li></ul></td><td><img src="https://mosaic01.ztat.net/vgs/media/large/10/K4/4A/00/YA/11/10K44A00Y-A11@2.jpg" height="150px;" /></td><td><ul><li><b>category = shoes</b></li></ul></td><td><img src="http://i1.ztat.net/large/RO/52/1T/00/3K/11/RO521T003-K11@12.jpg" height="150px;" /></td><td><ul><li><b>category = female/jumpsuits_playsuits</b></li></ul></td></tr></tbody></table></td></tr>
+<tr><td><img src="https://www.instagram.com/p/BflxmA7BJrr/media/?size=t"/></td><td><table><tbody><tr><td><img src="https://mosaic01.ztat.net/vgs/media/large/ON/24/1I/00/0A/11/ON241I000-A11@10.jpg" height="150px;" /></td><td><ul><li><b>category = female/intimates_socks/bras</b></li></ul></td><td><img src="https://mosaic01.ztat.net/vgs/media/large/DP/51/1A/06/SA/11/DP511A06S-A11@11.jpg" height="150px;" /></td><td><ul><li><b>category = shoes</b></li></ul></td><td><img src="http://i1.ztat.net/large/7F/12/1S/00/8K/11/7F121S008-K11@2.1.jpg" height="150px;" /></td><td><ul><li><b>category = denim_pants</b></li></ul></td><td><img src="http://i1.ztat.net/large/ES/15/1B/04/OB/11/ES151B04O-B11@12.jpg" height="150px;" /></td><td><ul><li><b>category = accessories/hats_beanies</b></li></ul></td></tr></tbody></table></td></tr>
+<tr><td><img src="https://www.instagram.com/p/BflyUnuhGSP/media/?size=t"/></td><td><table><tbody><tr><td><img src="http://i1.ztat.net/large/PC/72/1U/00/LQ/11/PC721U00L-Q11@12.png" height="150px;" /></td><td><ul><li><b>category = jackets_coats</b></li></ul></td></tr></tbody></table></td></tr>
+<tr><td><img src="https://www.instagram.com/p/Bflyn96lrWX/media/?size=t"/></td><td><table><tbody><tr><td><img src="http://i1.ztat.net/large/VA/11/1A/0J/KF/11/VA111A0JK-F11@14.jpg" height="150px;" /></td><td><ul><li><b>category = shoes</b></li></ul></td><td><img src="http://i1.ztat.net/large/M0/Q2/1A/07/ZI/11/M0Q21A07Z-I11@4.jpg" height="150px;" /></td><td><ul><li><b>category = denim_pants</b></li></ul></td><td><img src="http://i1.ztat.net/large/R6/72/1E/02/JQ/11/R6721E02J-Q11@2.png" height="150px;" /></td><td><ul><li><b>category = jackets_coats</b></li></ul></td></tr></tbody></table></td></tr>
+<tr><td><img src="https://www.instagram.com/p/Bflzlligl97/media/?size=t"/></td><td><table><tbody><tr><td><img src="http://i1.ztat.net/large/LT/12/1S/00/MK/12/LT121S00M-K12@10.jpg" height="150px;" /></td><td><ul><li><b>category = denim_pants</b></li></ul></td><td><img src="http://i1.ztat.net/large/SV/05/1H/00/TO/11/SV051H00T-O11@14.jpg" height="150px;" /></td><td><ul><li><b>category = accessories/bags</b></li></ul></td><td><img src="http://i1.ztat.net/large/TP/72/1I/0G/HB/11/TP721I0GH-B11@2.png" height="150px;" /></td><td><ul><li><b>category = jumpers_cardigans</b></li></ul></td></tr></tbody></table></td></tr>
+<tr><td><img src="https://www.instagram.com/p/BflzmhBDTi0/media/?size=t"/></td><td><table><tbody><tr><td><img src="http://i1.ztat.net/large/MW/72/1U/00/EN/11/MW721U00E-N11@14.jpg" height="150px;" /></td><td><ul><li><b>category = jackets_coats</b></li></ul></td></tr></tbody></table></td></tr>
+<tr><td><img src="https://www.instagram.com/p/Bflzotwj_BZ/media/?size=t"/></td><td><table><tbody><tr><td><img src="http://i1.ztat.net/large/LE/22/1N/04/QK/12/LE221N04Q-K12@12.2.jpg" height="150px;" /></td><td><ul><li><b>category = denim_pants</b></li></ul></td><td><img src="http://i1.ztat.net/large/P1/42/1U/00/EB/11/P1421U00E-B11@12.jpg" height="150px;" /></td><td><ul><li><b>category = jackets_coats</b></li></ul></td></tr></tbody></table></td></tr>
+<tr><td><img src="https://www.instagram.com/p/Bfm66eulSkC/media/?size=t"/></td><td><table><tbody><tr><td><img src="http://i1.ztat.net/large/GL/95/1H/05/BH/11/GL951H05B-H11@8.jpg" height="150px;" /></td><td><ul><li><b>category = accessories/bags</b></li></ul></td><td><img src="http://i1.ztat.net/large/M3/22/1I/09/2B/11/M3221I092-B11@2.png" height="150px;" /></td><td><ul><li><b>category = jumpers_cardigans</b></li></ul></td></tr></tbody></table></td></tr>
+<tr><td><img src="https://www.instagram.com/p/BfmAY9GndO8/media/?size=t"/></td><td><table><tbody><tr><td><img src="https://mosaic01.ztat.net/vgs/media/large/2C/R2/1N/00/KK/14/2CR21N00K-K14@6.1.jpg" height="150px;" /></td><td><ul><li><b>category = denim_pants</b></li></ul></td><td><img src="http://i1.ztat.net/large/AM/22/1D/06/YA/11/AM221D06Y-A11@10.png" height="150px;" /></td><td><ul><li><b>category = tops</b></li></ul></td><td><img src="http://i1.ztat.net/large/1V/E5/2K/00/4C/11/1VE52K004-C11@6.jpg" height="150px;" /></td><td><ul><li><b>category = accessories/eyewear</b></li></ul></td></tr></tbody></table></td></tr>
+
+                </tbody>
+
+            </table>
+        </div>
+
+        <div style="background: #f16823; position: fixed; left: 0; right: 0; bottom: 0; height: 35px;">
+            <a href="./products_359.html" class="btn btn-default">Previous</a>
+            <a href="./products_361.html" class="btn btn-default">Next</a>
+        </div>
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+                crossorigin="anonymous"></script>
+    </body>
+</html>

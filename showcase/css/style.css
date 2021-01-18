@@ -1,0 +1,135 @@
+
+.menuLogo {
+  width: 85px;
+  height: 30px;
+  background-image: url("./../../wp-content/uploads/2017/03/logo-white.png");
+  background-size: 90%;
+  margin-left:40px;
+  margin-top: -2px;
+  background-repeat: no-repeat;
+}
+
+#navbar a {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  float: right;
+  }
+
+
+body{
+	margin:0;
+	background: white;
+	font-family:'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  color: #f16823;
+  font-size:20px;
+  margin-top:95px;
+  text-align: center;
+  font-weight: bold;
+}
+
+h2 {
+  color: #3f3f3f;
+  font-size:18px;
+  margin-top:15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+p {
+  margin-top:auto;
+  color: #3f3f3f;
+  font-size:16px;
+  text-align: left;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+li {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.col-1
+{
+  margin-left: 30px;
+}
+
+p1 {
+  margin-top:auto;
+  color: #3f3f3f;
+  font-size:16px;
+}
+
+
+h3 {
+  color: #f16823;
+  font-size:20px;
+  margin-top:10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* zalando */
+div.ex1 {
+  background-color: #f2f2f2;
+  width: 280px;
+  width: 100%;
+  height: 500px;
+  overflow: scroll;
+}
+
+div.ex2 {
+  background-color: #f2f2f2;
+  height: 500px;
+  overflow: scroll;
+}
+
+.row{
+
+	margin-left: 0;
+	margin-right: 0;
+}
+
+/* fashwell */
+#gallery
+{
+  background-color: #f2f2f2;
+  width: 450px;
+  height: 500px;
+  overflow: scroll;
+}
+
+.img_output {
+  width: 230px;
+}
+
+
+map:hover, area:hover{
+  cursor: pointer;
+}
+
+<<<<<<< HEAD
+.products{
+  padding: 8px;
+}
+
+
+.products ul li span a {
+  text-decoration: underline;
+  cursor: pointer;
+=======
+
+.output {
+  margin-top: 10px;
+}
+
+.products {
+  margin-left: 10px;
+  margin-right: 10px;
+>>>>>>> af390c2df1b906ddaceb21449c9514ec2ad602bb
+}
