@@ -2,7 +2,7 @@
 .menuLogo {
   width: 85px;
   height: 30px;
-  background-image: url("/wp-content/uploads/2017/03/logo-white.png");
+  background-image: url("./../../wp-content/uploads/2017/03/logo-white.png");
   background-size: 90%;
   margin-left:40px;
   margin-top: -2px;
