@@ -1,23 +1,30 @@
-<style>
-	img {
+<style>img {
 	width: 100%;	
-	}
-</style>
+	}</style>
+
+
 <h1>MonetDB Window Function Extensions</h1>
-<p>To increase MonetDB's ability to process time series data, We have extended MonetDB&rsquo;s support for the SQL window functions to cover the majority as specified by the 2011 revision of the <a href="https://sigmodrecord.org/publications/sigmodRecord/1203/pdfs/10.industry.zemke.pdf">SQL standard</a>.<br />In this showcase, we elaborate the functionality that has been added together with some example queries to show their usage.</p>
+<p>To increase MonetDB's ability to process time series data, We have extended MonetDB&rsquo;s support for the SQL window functions to cover the majority as specified by the 2011 revision of the <a href="https://sigmodrecord.org/publications/sigmodRecord/1203/pdfs/10.industry.zemke.pdf">SQL standard</a>.<br>In this showcase, we elaborate the functionality that has been added together with some example queries to show their usage.</p>
 <h2>Feature Extensions</h2>
 <p>In this section we give specifications of the new window functions.</p>
 <h3>Window Analytic Functions</h3>
 <p>Besides the existing <code>RANK()</code>, <code>DENSE_RANK()</code> and <code>ROW_NUMBER()</code> functions, we have implemented all the remaining analytic functions listed in the SQL standard:</p>
 <ul>
-<li><code>PERCENT_RANK():DOUBLE</code> - calculates the relative rank of the current row, i.e. <code>(rank() - 1) / (rows in partition - 1)</code>.</li>
-<li><code>CUME_DIST():DOUBLE</code> - calculates the cumulative distribution, i.e. the number of rows preceding or peer with current row / rows in partition.</li>
-<li><code>NTILE(nbuckets BIGINT):BIGINT</code> - enumerates rows from 1 in each partition, dividing it in the most equal way possible.</li>
+<li>
+<code>PERCENT_RANK():DOUBLE</code> - calculates the relative rank of the current row, i.e. <code>(rank() - 1) / (rows in partition - 1)</code>.</li>
+<li>
+<code>CUME_DIST():DOUBLE</code> - calculates the cumulative distribution, i.e. the number of rows preceding or peer with current row / rows in partition.</li>
+<li>
+<code>NTILE(nbuckets BIGINT):BIGINT</code> - enumerates rows from 1 in each partition, dividing it in the most equal way possible.</li>
 <li>\<code>LAG(input A[, offset BIGINT[, default_value A ]]):A</code> - returns input value at row <code>offset</code> before the current row in the partition. If the offset row does not exist, then the <code>default_value</code> is output. By default <code>offset</code> is 1 and <code>default_value</code> is <code>NULL</code>.</li>
-<li><code>LEAD(input A[, offset BIGINT[, default\_value A ]]):A</code> - Returns input value at row <code>offset</code> after the current row in the partition. If the offset row does not exist, then the <code>default_value</code> is output. By default <code>offset</code> is 1 and <code>default_value</code> is <code>NULL</code>.</li>
-<li><code>FIRST_VALUE(input A):A</code> - Returns input value at first row of the window frame.</li>
-<li><code>LAST_VALUE(input A):A</code> - Returns input value at last row of the window frame.</li>
-<li><code>NTH_VALUE(input A, nth BIGINT):A</code> - Returns input value at <code>nth</code> row of the window frame. If there is no <code>nth</code> row in the window frame, then <code>NULL</code> is returned.</li>
+<li>
+<code>LEAD(input A[, offset BIGINT[, default\_value A ]]):A</code> - Returns input value at row <code>offset</code> after the current row in the partition. If the offset row does not exist, then the <code>default_value</code> is output. By default <code>offset</code> is 1 and <code>default_value</code> is <code>NULL</code>.</li>
+<li>
+<code>FIRST_VALUE(input A):A</code> - Returns input value at first row of the window frame.</li>
+<li>
+<code>LAST_VALUE(input A):A</code> - Returns input value at last row of the window frame.</li>
+<li>
+<code>NTH_VALUE(input A, nth BIGINT):A</code> - Returns input value at <code>nth</code> row of the window frame. If there is no <code>nth</code> row in the window frame, then <code>NULL</code> is returned.</li>
 </ul>
 <h3>Aggregate Functions</h3>
 <p>We have extended our existing aggregate functions to support aggregate window functions:</p>
@@ -31,7 +38,7 @@
 <li><code>AVG(input A) : DOUBLE</code></li>
 </ul>
 <h3>Window Functions Frames</h3>
-<p>Our window functions now support frame specifications from the SQL standard.<br />The fully implemented SQL grammar is listed bellow:</p>
+<p>Our window functions now support frame specifications from the SQL standard.<br>The fully implemented SQL grammar is listed bellow:</p>
 <pre><code>
 window_function_call:
 { window_aggregate_function | window_rank_function } OVER { ident | `(' window_specification `)' }
@@ -76,9 +83,12 @@ window_frame_start:
 </code></pre>
 <p>The supported frames are: <code>ROWS</code>, <code>RANGE</code> and <code>GROUPS</code>.</p>
 <ul>
-<li><code>ROWS</code> - frames are calculated on physical offsets of input rows.</li>
-<li><code>RANGE</code> - result frames are calculated on value differences from input rows (used with a custom <code>PRECEDING</code> or <code>FOLLOWING</code> bound requires an <code>ORDER BY</code> clause).</li>
-<li><code>GROUPS</code> - groups of equal row values are used to calculate result frames (requires an ORDER BY clause).</li>
+<li>
+<code>ROWS</code> - frames are calculated on physical offsets of input rows.</li>
+<li>
+<code>RANGE</code> - result frames are calculated on value differences from input rows (used with a custom <code>PRECEDING</code> or <code>FOLLOWING</code> bound requires an <code>ORDER BY</code> clause).</li>
+<li>
+<code>GROUPS</code> - groups of equal row values are used to calculate result frames (requires an ORDER BY clause).</li>
 </ul>
 <p>After a window frame declaration, the window bounds must be specified (the window function will be applied to each frame derived from each row in the input). If <code>window_frame_start</code> bound is provided, then the frame&rsquo;s end will be set to <code>CURRENT ROW</code>. An <code>UNBOUNDED PRECEDING</code> bound means the first row of a partition, while an <code>UNBOUNDED FOLLOWING</code> means the last row of a partition. In <code>query_expression PRECEDING</code> (i.e. frame rows before the current row) and <code>query_expression FOLLOWING</code> (i.e. frame rows after the current row) bounds, the <code>query_expression</code> can evaluate to a single atom (use the same bound for every input row), or a column (use a different bound for each input row). In either case, every <code>query_expression</code> value must be non-negative and non-<code>NULL</code>, as negative and <code>NULL</code> bounds are not defined for SQL window functions. <code>CURRENT ROW</code> is equivalent to <code>0 PRECEDING</code> and <code>0 FOLLOWING</code> on either side of the bound. The SQL standard allows an <code>EXCLUDING</code> clause after the bounds definition. At the moment only <code>EXCLUDE NO OTHERS</code> (i.e. default one) is implemented, which means all rows in the window frame are used for computation of the analytic function. The frame specification has been implemented for aggregation functions, as well as the functions <code>FIRST_VALUE</code>, <code>LAST_VALUE</code> and <code>NTH_VALUE</code>. The default frame specification is <code>RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW</code> when there is an <code>ORDER BY</code> clause, and <code>RANGE BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING</code> when an <code>ORDER BY</code> clause is not present.</p>
 <h2>Example Queries</h2>
@@ -271,4 +281,4 @@ more&gt;  FROM region1_orders;
 729 tuples
 </code></pre>
 <p>The complete result set is best view in a plot as shown in the following figure:</p>
-<img src="./images/moving_average_example.png" alt="" />
+<img src="./images/moving_average_example.png" alt="">

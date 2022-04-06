@@ -7,15 +7,13 @@
 
         <title>FashionBrain product recognition and tagging</title>
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-              integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-              crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     </head>
 
 
     <body>
-        <div >
+        <div>
             <table class="table">
                 <thead>
                     <tr>
@@ -24,26 +22,875 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td><img src="https://www.instagram.com/p/BgCbr3ZlAd8/media/?size=t"/></td><td><table><tbody><tr><td><img src="http://i1.ztat.net/large/PE/12/1N/09/EK/11/PE121N09E-K11@11.jpg" height="150px;" /></td><td><ul><li><b>category = denim_pants</b></li><li>color = light_blue</li><li>cut = slim</li><li>denim_detail = washed</li><li>occasion = casual</li><li>pattern = solid</li><li>type = jeans</li></ul></td><td><img src="http://i1.ztat.net/large/FA/D1/1N/01/LA/11/FAD11N01L-A11@14.jpg" height="150px;" /></td><td><ul><li><b>category = shoes</b></li><li>aesthetic = edgy</li><li>ankle_height = high-top</li><li>fastener = zipper</li><li>heel_height = high</li><li>occasion = night_out</li><li>toe_type = round</li><li>type = chelsea_boots</li></ul></td><td><img src="http://i1.ztat.net/large/FS/15/1H/09/SI/11/FS151H09S-I11@2.jpg" height="150px;" /></td><td><ul><li><b>category = accessories/bags</b></li><li>closer = zipper</li><li>leather_type = woven</li><li>occasion = business_casual</li><li>size = xl</li><li>strap_type = crossbody</li><li>type = duffel</li></ul></td><td><img src="http://i1.ztat.net/large/WE/B2/1D/01/QQ/11/WEB21D01Q-Q11@2.png" height="150px;" /></td><td><ul><li><b>category = tops</b></li><li>aesthetic = athletic</li><li>color = black</li><li>length = normal</li><li>neck_type = round</li><li>silhouette = straight</li><li>sleeve_length = sleeveless</li><li>type = tank-top</li></ul></td><td><img src="http://i1.ztat.net/large/S0/F1/1N/00/KA/11/S0F11N00K-A11@14.jpg" height="150px;" /></td><td><ul><li><b>category = shoes</b></li><li>aesthetic = edgy</li><li>ankle_height = high-top</li><li>fastener = zipper</li><li>heel_height = high</li><li>occasion = business_casual</li><li>toe_type = square</li><li>type = chelsea_boots</li></ul></td><td><img src="http://i1.ztat.net/large/CO/12/1U/01/KB/11/CO121U01K-B11@4.1.jpg" height="150px;" /></td><td><ul><li><b>category = jackets_coats</b></li><li>length = long</li><li>neck_type = hooded</li><li>occasion = casual</li><li>pattern = solid</li><li>sleeve_length = three_quarter</li><li>type = parka</li></ul></td></tr></tbody></table></td></tr>
-<tr><td><img src="https://www.instagram.com/p/BgCck4-HFhu/media/?size=t"/></td><td><table><tbody><tr><td><img src="http://i1.ztat.net/large/DU/51/1B/0A/3D/11/DU511B0A3-D11@12.jpg" height="150px;" /></td><td><ul><li><b>category = shoes</b></li><li>aesthetic = bohemian</li><li>heel_height = high</li><li>heel_type = stiletto</li><li>occasion = night_out</li><li>toe_type = pointed</li><li>type = pumps</li></ul></td><td><img src="http://i1.ztat.net/large/JL/12/2E/02/PC/11/JL122E02P-C11@12.jpg" height="150px;" /></td><td><ul><li><b>category = denim_pants</b></li><li>cut = classic</li><li>occasion = formal</li></ul></td><td><img src="http://i1.ztat.net/large/KM/52/1G/00/GC/11/KM521G00G-C11@2.jpg" height="150px;" /></td><td><ul><li><b>category = jackets_coats</b></li><li>length = normal</li><li>neck_type = lapel_collar</li><li>occasion = business_casual</li><li>pattern = checkered</li><li>sleeve_length = long</li><li>type = blazer</li></ul></td></tr></tbody></table></td></tr>
-<tr><td><img src="https://www.instagram.com/p/BgCeMSpDmot/media/?size=t"/></td><td><table><tbody><tr><td><img src="http://i1.ztat.net/large/PY/52/2O/02/5A/11/PY522O025-A11@10.jpg" height="150px;" /></td><td><ul><li><b>category = tops</b></li><li>aesthetic = athletic</li><li>color = white</li><li>length = normal</li><li>neck_type = round</li><li>occasion = casual</li><li>silhouette = slim_fit</li><li>sleeve_length = short</li><li>type = t-shirt</li></ul></td><td><img src="http://i1.ztat.net/large/OS/32/2D/08/HK/11/OS322D08H-K11@4.jpg" height="150px;" /></td><td><ul><li><b>category = male/shirts</b></li><li>aesthetic = heritage</li><li>length = normal</li><li>neck_type = collared</li><li>pattern = plaid</li><li>silhouette = slim_fit</li><li>sleeve_length = long</li><li>type = shirt</li></ul></td><td><img src="http://i1.ztat.net/large/H1/42/2G/00/0K/11/H1422G000-K11@17.1.jpg" height="150px;" /></td><td><ul><li><b>category = denim_pants</b></li><li>cut = straight</li><li>denim_detail = plain</li><li>occasion = business_casual</li><li>pattern = solid</li><li>type = jeans</li></ul></td><td><img src="https://mosaic01.ztat.net/vgs/media/large/QU/15/2K/00/5Q/11/QU152K005-Q11@1.1.jpg" height="150px;" /></td><td><ul><li><b>category = accessories/eyewear</b></li><li>frame = full-frame</li><li>style = square</li></ul></td></tr></tbody></table></td></tr>
-<tr><td><img src="https://www.instagram.com/p/BgCeN9XFxv3/media/?size=t"/></td><td><table><tbody><tr><td><img src="http://i1.ztat.net/large/L8/85/1H/01/XJ/11/L8851H01X-J11@13.jpg" height="150px;" /></td><td><ul><li><b>category = accessories/bags</b></li><li>aesthetic = bohemian</li><li>leather_type = woven</li><li>occasion = vacation</li><li>size = large</li><li>strap_type = double_strap</li></ul></td><td><img src="http://i1.ztat.net/large/ZW/32/1E/01/3M/11/ZW321E013-M11@13.jpg" height="150px;" /></td><td><ul><li><b>category = tops</b></li><li>aesthetic = heritage</li><li>color = light_green</li><li>length = normal</li><li>neck_type = collared</li><li>occasion = casual</li><li>pattern = plaid</li><li>silhouette = straight</li><li>sleeve_length = short</li><li>type = shirt</li></ul></td><td><img src="http://i1.ztat.net/large/ST/H2/1A/04/MH/11/STH21A04M-H11@12.1.jpg" height="150px;" /></td><td><ul><li><b>category = denim_pants</b></li><li>cut = flare</li><li>type = corduroy</li></ul></td></tr></tbody></table></td></tr>
-<tr><td><img src="https://www.instagram.com/p/BgCkN1fnnG0/media/?size=t"/></td><td><table><tbody><tr><td><img src="http://i1.ztat.net/large/M3/21/1A/00/IJ/11/M3211A00I-J11@2.jpg" height="150px;" /></td><td><ul><li><b>category = shoes</b></li><li>aesthetic = bohemian</li><li>fastener = buckle</li><li>heel_height = high</li><li>heel_type = stiletto</li><li>occasion = night_out</li><li>toe_type = open</li><li>type = heeled_sandals</li></ul></td><td><img src="http://i1.ztat.net/large/IV/32/1T/00/5A/11/IV321T005-A11@6.1.jpg" height="150px;" /></td><td><ul><li><b>category = female/jumpsuits_playsuits</b></li><li>occasion = night_out</li><li>pattern = solid</li><li>sleeve_length = short</li></ul></td><td><img src="http://i1.ztat.net/large/NL/72/1D/02/MA/11/NL721D02M-A11@11.2.jpg" height="150px;" /></td><td><ul><li><b>category = tops</b></li><li>color = white</li><li>length = normal</li><li>occasion = casual</li><li>silhouette = straight</li><li>sleeve_length = short</li><li>type = t-shirt</li></ul></td></tr></tbody></table></td></tr>
-<tr><td><img src="https://www.instagram.com/p/BgCmd2SHILd/media/?size=t"/></td><td><table><tbody><tr><td><img src="http://i1.ztat.net/large/SU/21/2G/00/HQ/12/SU212G00H-Q12@14.jpg" height="150px;" /></td><td><ul><li><b>category = shoes</b></li><li>fastener = velcroe</li><li>heel_height = flat</li><li>occasion = vacation</li><li>toe_type = open</li><li>type = slip_on_sandal</li></ul></td><td><img src="http://i1.ztat.net/large/M3/I2/2G/00/PQ/11/M3I22G00P-Q11@20.jpg" height="150px;" /></td><td><ul><li><b>category = denim_pants</b></li><li>aesthetic = athletic</li><li>length = normal</li><li>occasion = workout</li></ul></td><td><img src="http://i1.ztat.net/large/RA/25/2K/00/XQ/11/RA252K00X-Q11@7.jpg" height="150px;" /></td><td><ul><li><b>category = accessories/eyewear</b></li><li>aesthetic = classic</li><li>frame = brow-bar</li><li>occasion = vacation</li></ul></td><td><img src="http://i1.ztat.net/large/TO/72/2O/0N/YK/11/TO722O0NY-K11@15.jpg" height="150px;" /></td><td><ul><li><b>category = tops</b></li><li>aesthetic = athletic</li><li>color = light_turquoise</li><li>length = normal</li><li>neck_type = v_neck</li><li>occasion = casual</li><li>silhouette = slim_fit</li><li>sleeve_length = short</li><li>type = t-shirt</li></ul></td><td><img src="http://i1.ztat.net/large/P1/45/1H/03/YF/11/P1451H03Y-F11@13.jpg" height="150px;" /></td><td><ul><li><b>category = accessories/bags</b></li><li>closer = zipper</li><li>occasion = business_casual</li><li>size = small</li><li>strap_type = no_handle</li><li>type = clutch</li></ul></td></tr></tbody></table></td></tr>
-<tr><td><img src="https://www.instagram.com/p/BgCnxFjHfYJ/media/?size=t"/></td><td><table><tbody><tr><td><img src="http://i1.ztat.net/large/IJ/02/1H/00/0B/11/IJ021H000-B11@13.jpg" height="150px;" /></td><td><ul><li><b>category = jackets_coats</b></li><li>aesthetic = athletic</li><li>color = light_brown</li><li>length = long</li><li>neck_type = hooded</li><li>occasion = casual</li><li>pattern = solid</li><li>sleeve_length = long</li><li>type = parka</li></ul></td><td><img src="http://i1.ztat.net/large/6F/R2/1N/02/LK/12/6FR21N02L-K12@12.jpg" height="150px;" /></td><td><ul><li><b>category = denim_pants</b></li><li>cut = skinny</li><li>denim_detail = washed</li><li>occasion = casual</li><li>pattern = solid</li><li>type = jeans</li></ul></td><td><img src="http://i1.ztat.net/large/P1/21/2K/00/7C/11/P1212K007-C11@12.jpg" height="150px;" /></td><td><ul><li><b>category = shoes</b></li><li>aesthetic = street</li><li>ankle_height = high-top</li><li>fastener = tie</li><li>heel_height = flat</li><li>occasion = casual</li><li>toe_type = round</li><li>type = lace_up_boots</li></ul></td></tr></tbody></table></td></tr>
-<tr><td><img src="https://www.instagram.com/p/BgCsV0EB6Iw/media/?size=t"/></td><td><table><tbody><tr><td><img src="http://i1.ztat.net/large/BJ/01/1B/02/RO/11/BJ011B02R-O11@11.jpg" height="150px;" /></td><td><ul><li><b>category = shoes</b></li><li>aesthetic = edgy</li><li>heel_height = high</li><li>heel_type = stiletto</li><li>occasion = night_out</li><li>toe_type = pointed</li><li>type = pumps</li></ul></td><td><img src="http://i1.ztat.net/large/N1/42/9C/00/GB/11/N1429C00G-B11@12.jpg" height="150px;" /></td><td><ul><li><b>category = denim_pants</b></li><li>cut = wide_leg</li><li>occasion = business_casual</li><li>pattern = solid</li><li>type = chinos</li></ul></td><td><img src="http://i1.ztat.net/large/N3/22/1U/00/9C/11/N3221U009-C11@2.png" height="150px;" /></td><td><ul><li><b>category = jackets_coats</b></li><li>length = crop</li><li>neck_type = lapel_collar</li><li>occasion = business_casual</li><li>pattern = solid</li><li>sleeve_length = long</li><li>type = blazer</li></ul></td></tr></tbody></table></td></tr>
-<tr><td><img src="https://www.instagram.com/p/BgCugtGlIGU/media/?size=t"/></td><td><table><tbody><tr><td><img src="http://i1.ztat.net/large/PO/N2/1G/00/0J/11/PON21G000-J11@14.jpg" height="150px;" /></td><td><ul><li><b>category = jackets_coats</b></li><li>color = dark_green</li><li>length = long</li><li>neck_type = lapel_collar</li><li>occasion = casual</li><li>pattern = solid</li><li>sleeve_length = long</li><li>type = trench</li></ul></td><td><img src="http://i1.ztat.net/large/DU/51/1N/04/FQ/11/DU511N04F-Q11@11.jpg" height="150px;" /></td><td><ul><li><b>category = shoes</b></li><li>aesthetic = edgy</li><li>fastener = zipper</li><li>heel_height = high</li><li>heel_type = cone</li><li>occasion = night_out</li><li>toe_type = pointed</li><li>type = pumps</li></ul></td><td><img src="http://i1.ztat.net/large/TE/45/1H/09/GQ/11/TE451H09G-Q11@14.jpg" height="150px;" /></td><td><ul><li><b>category = accessories/bags</b></li><li>occasion = business_casual</li><li>size = medium</li><li>strap_type = double-handle</li><li>type = handbag</li></ul></td></tr></tbody></table></td></tr>
-<tr><td><img src="https://www.instagram.com/p/BgCxGnWn6hb/media/?size=t"/></td><td><table><tbody><tr><td><img src="http://i1.ztat.net/large/LI/K2/1C/00/4Q/11/LIK21C004-Q11@12.jpg" height="150px;" /></td><td><ul><li><b>category = female/dresses</b></li><li>color = black</li><li>length = midi</li><li>occasion = night_out</li><li>silhouette = sheath</li><li>sleeve_length = sleeveless</li></ul></td><td><img src="http://i1.ztat.net/large/GL/91/1N/02/JQ/11/GL911N02J-Q11@14.jpg" height="150px;" /></td><td><ul><li><b>category = shoes</b></li><li>aesthetic = edgy</li><li>ankle_height = high-top</li><li>color = black</li><li>fastener = slip-on</li><li>heel_height = medium</li><li>occasion = night_out</li><li>toe_type = pointed</li><li>type = chelsea_boots</li></ul></td></tr></tbody></table></td></tr>
-<tr><td><img src="https://www.instagram.com/p/BgCxrcwFm5F/media/?size=t"/></td><td><table><tbody><tr><td><img src="http://i1.ztat.net/large/NM/02/2D/00/TQ/11/NM022D00T-Q11@14.1.jpg" height="150px;" /></td><td><ul><li><b>category = male/shirts</b></li><li>aesthetic = heritage</li><li>length = normal</li><li>neck_type = collared</li><li>occasion = casual</li><li>pattern = floral</li><li>silhouette = slim_fit</li><li>sleeve_length = long</li><li>type = shirt</li></ul></td><td><img src="http://i1.ztat.net/large/SE/62/2D/0Q/1K/11/SE622D0Q1-K11@12.jpg" height="150px;" /></td><td><ul><li><b>category = male/shirts</b></li><li>aesthetic = heritage</li><li>color = blue</li><li>length = normal</li><li>neck_type = collared</li><li>occasion = casual</li><li>pattern = solid</li><li>silhouette = slim_fit</li><li>sleeve_length = long</li><li>type = shirt</li></ul></td></tr></tbody></table></td></tr>
-<tr><td><img src="https://www.instagram.com/p/BgD0vBrlLSI/media/?size=t"/></td><td><table><tbody><tr><td><img src="http://i1.ztat.net/large/PO/25/1K/00/5O/11/PO251K005-O11@6.1.jpg" height="150px;" /></td><td><ul><li><b>category = accessories/eyewear</b></li><li>frame = full-frame</li></ul></td><td><img src="http://i1.ztat.net/large/JL/12/1A/02/3O/11/JL121A023-O11@1.1.jpg" height="150px;" /></td><td><ul><li><b>category = denim_pants</b></li><li>aesthetic = heritage</li><li>pattern = plaid</li><li>type = leggings</li></ul></td><td><img src="http://i1.ztat.net/large/BH/92/1U/00/BA/11/BH921U00B-A11@5.png" height="150px;" /></td><td><ul><li><b>category = jackets_coats</b></li><li>aesthetic = athletic</li><li>length = crop</li><li>neck_type = hooded</li><li>occasion = casual</li><li>pattern = marl</li><li>sleeve_length = long</li><li>type = knit</li></ul></td><td><img src="http://i1.ztat.net/large/M3/I5/1H/01/XO/11/M3I51H01X-O11@1.1.jpg" height="150px;" /></td><td><ul><li><b>category = accessories/bags</b></li><li>closer = zipper</li><li>color = light_brown</li><li>leather_type = woven</li><li>occasion = business_casual</li><li>size = small</li><li>strap_type = single_strap</li></ul></td></tr></tbody></table></td></tr>
-<tr><td><img src="https://www.instagram.com/p/BgD5ZK-FcH5/media/?size=t"/></td><td><table><tbody><tr><td><img src="http://i1.ztat.net/large/GS/95/2M/00/EQ/12/GS952M00E-Q12@7.jpg" height="150px;" /></td><td><ul><li><b>category = accessories/watches</b></li><li>occasion = casual</li></ul></td><td><img src="https://mosaic01.ztat.net/vgs/media/large/DI/15/2M/01/VF/11/DI152M01V-F11@5.jpg" height="150px;" /></td><td><ul><li><b>category = accessories/watches</b></li><li>occasion = night_out</li></ul></td><td><img src="http://i1.ztat.net/large/ME/14/2A/0A/FH/11/ME142A0AF-H11@11.jpg" height="150px;" /></td><td><ul><li><b>category = shoes</b></li><li>aesthetic = athletic</li><li>ankle_height = low-top</li><li>fastener = tie</li><li>heel_height = flat</li><li>occasion = workout</li><li>toe_type = round</li><li>type = running_shoes</li></ul></td><td><img src="http://img1.ztat.net/large/SZ/75/1M/00/4D/11/SZ751M004-D11@1.1.jpg" height="150px;" /></td><td><ul><li><b>category = accessories/watches</b></li><li>occasion = formal</li></ul></td><td><img src="http://i1.ztat.net/large/FI/02/1I/01/UK/11/FI021I01U-K11@12.png" height="150px;" /></td><td><ul><li><b>category = jumpers_cardigans</b></li><li>length = normal</li><li>neck_type = boatneck</li><li>occasion = casual</li><li>pattern = striped</li><li>silhouette = straight</li><li>sleeve_length = long</li><li>type = sweater</li></ul></td><td><img src="https://mosaic01.ztat.net/vgs/media/large/TI/15/2M/00/KO/11/TI152M00K-O11@2.jpg" height="150px;" /></td><td><ul><li><b>category = accessories/watches</b></li><li>occasion = casual</li></ul></td></tr></tbody></table></td></tr>
-<tr><td><img src="https://www.instagram.com/p/BgD6ST0gCvv/media/?size=t"/></td><td><table><tbody><tr><td><img src="http://i1.ztat.net/large/B3/85/1H/05/FO/11/B3851H05F-O11@2.1.jpg" height="150px;" /></td><td><ul><li><b>category = accessories/bags</b></li><li>closer = zipper</li><li>leather_type = pebbled</li><li>occasion = business_casual</li><li>size = small</li><li>strap_type = crossbody</li><li>type = messenger</li></ul></td></tr></tbody></table></td></tr>
-<tr><td><img src="https://www.instagram.com/p/BgD78gKHF60/media/?size=t"/></td><td><table><tbody><tr><td><img src="http://i1.ztat.net/large/ST/H1/1E/00/ST/11/STH11E00S-T11@1.1.jpg" height="150px;" /></td><td><ul><li><b>category = shoes</b></li><li>aesthetic = street</li><li>ankle_height = low-top</li><li>fastener = tie</li><li>heel_height = flat</li><li>occasion = casual</li><li>toe_type = round</li><li>type = slip_on_sneakers</li></ul></td><td><img src="http://i1.ztat.net/large/DO/A2/1N/00/RK/11/DOA21N00R-K11@12.jpg" height="150px;" /></td><td><ul><li><b>category = denim_pants</b></li><li>aesthetic = athletic</li><li>color = dark_blue</li><li>cut = skinny</li><li>denim_detail = distressed</li><li>occasion = casual</li><li>pattern = solid</li><li>type = jeans</li></ul></td><td><img src="http://i1.ztat.net/large/BB/15/1H/01/IB/11/BB151H01I-B11@13.jpg" height="150px;" /></td><td><ul><li><b>category = accessories/bags</b></li><li>aesthetic = tailored</li><li>closer = zipper</li><li>color = light_brown</li><li>leather_type = pebbled</li><li>occasion = business_casual</li><li>size = medium</li><li>strap_type = convertible</li><li>type = handbag</li></ul></td><td><img src="http://i1.ztat.net/large/M3/J2/1D/00/7A/11/M3J21D007-A11@9.1.jpg" height="150px;" /></td><td><ul><li><b>category = tops</b></li><li>aesthetic = bohemian</li><li>length = normal</li><li>occasion = casual</li><li>pattern = striped</li><li>silhouette = straight</li><li>sleeve_length = short</li><li>type = t-shirt</li></ul></td></tr></tbody></table></td></tr>
-<tr><td><img src="https://www.instagram.com/p/BgD8jWjDzAJ/media/?size=t"/></td><td><table><tbody><tr><td><img src="http://i1.ztat.net/large/CI/12/2I/00/0Q/11/CI122I000-Q11@14.jpg" height="150px;" /></td><td><ul><li><b>category = jackets_coats</b></li><li>aesthetic = athletic</li><li>color = dark_grey</li><li>length = normal</li><li>neck_type = high_stand_collar</li><li>occasion = casual</li><li>pattern = solid</li><li>sleeve_length = sleeveless</li><li>type = vests</li></ul></td><td><img src="http://i1.ztat.net/large/LO/81/1C/00/67/08/LO811C006-708@1.1.jpg" height="150px;" /></td><td><ul><li><b>category = shoes</b></li><li>aesthetic = edgy</li><li>ankle_height = high-top</li><li>color = dark_red</li><li>fastener = zipper</li><li>heel_height = medium</li><li>occasion = business_casual</li><li>toe_type = square</li><li>type = chelsea_boots</li></ul></td><td><img src="http://i1.ztat.net/large/ED/02/2T/00/VQ/11/ED022T00V-Q11@1.1.jpg" height="150px;" /></td><td><ul><li><b>category = jackets_coats</b></li><li>aesthetic = heritage</li><li>length = normal</li><li>neck_type = high_stand_collar</li><li>occasion = casual</li><li>sleeve_length = long</li><li>type = denim</li></ul></td><td><img src="http://i1.ztat.net/large/JU/62/1A/01/SD/11/JU621A01S-D11@12.jpg" height="150px;" /></td><td><ul><li><b>category = denim_pants</b></li><li>aesthetic = athletic</li><li>cut = skinny</li><li>occasion = workout</li><li>type = leggings</li></ul></td><td><img src="http://i1.ztat.net/large/AN/62/1I/08/JB/11/AN621I08J-B11@2.png" height="150px;" /></td><td><ul><li><b>category = jumpers_cardigans</b></li><li>aesthetic = classic</li><li>color = light_grey</li><li>length = normal</li><li>neck_type = turtle</li><li>occasion = casual</li><li>pattern = marl</li><li>silhouette = straight</li><li>sleeve_length = long</li><li>type = sweater</li></ul></td><td><img src="http://i1.ztat.net/large/PE/31/1N/02/BA/11/PE311N02B-A11@21.1.jpg" height="150px;" /></td><td><ul><li><b>category = shoes</b></li><li>aesthetic = street</li><li>ankle_height = high-top</li><li>fastener = slip-on</li><li>heel_height = flat</li><li>occasion = casual</li><li>toe_type = round</li><li>type = slip_on_sneakers</li></ul></td></tr></tbody></table></td></tr>
-<tr><td><img src="https://www.instagram.com/p/BgDHOhAl4qJ/media/?size=t"/></td><td><table><tbody><tr><td><img src="http://i1.ztat.net/large/ON/32/1G/0N/4J/11/ON321G0N4-J11@12.png" height="150px;" /></td><td><ul><li><b>category = jackets_coats</b></li><li>aesthetic = athletic</li><li>color = light_pink</li><li>length = normal</li><li>neck_type = hooded</li><li>occasion = business_casual</li><li>pattern = solid</li><li>sleeve_length = long</li><li>type = leather</li></ul></td><td><img src="http://i1.ztat.net/large/VE/02/1N/00/3K/11/VE021N003-K11@12.jpg" height="150px;" /></td><td><ul><li><b>category = denim_pants</b></li><li>color = light_blue</li><li>cut = slim</li><li>denim_detail = washed</li><li>occasion = casual</li><li>pattern = solid</li><li>type = jeans</li></ul></td><td><img src="http://i1.ztat.net/large/TT/91/1A/00/YA/11/TT911A00Y-A11@14.jpg" height="150px;" /></td><td><ul><li><b>category = shoes</b></li><li>aesthetic = street</li><li>ankle_height = low-top</li><li>color = white</li><li>heel_height = flat</li><li>occasion = casual</li><li>toe_type = round</li><li>type = casual_sneakers</li></ul></td></tr></tbody></table></td></tr>
-<tr><td><img src="https://www.instagram.com/p/BgDJnJDj_i7/media/?size=t"/></td><td><table><tbody><tr><td><img src="http://i1.ztat.net/large/SA/32/2Q/01/ZA/11/SA322Q01Z-A11@2.1.jpg" height="150px;" /></td><td><ul><li><b>category = jumpers_cardigans</b></li><li>aesthetic = classic</li><li>color = light_beige</li><li>length = normal</li><li>neck_type = round</li><li>occasion = casual</li><li>pattern = marl</li><li>silhouette = straight</li><li>sleeve_length = long</li><li>type = sweater</li></ul></td><td><img src="http://i1.ztat.net/large/TP/82/2T/01/7Q/11/TP822T017-Q11@10.jpg" height="150px;" /></td><td><ul><li><b>category = jackets_coats</b></li><li>color = grey</li><li>length = long</li><li>neck_type = lapel_collar</li><li>occasion = business_casual</li><li>pattern = herringbone</li><li>sleeve_length = three_quarter</li><li>type = knit</li></ul></td><td><img src="http://i1.ztat.net/large/DP/52/1A/0D/LK/11/DP521A0DL-K11@4.jpg" height="150px;" /></td><td><ul><li><b>category = denim_pants</b></li><li>aesthetic = tailored</li><li>cut = classic</li><li>occasion = formal</li><li>pattern = plaid</li><li>type = suit_pants</li></ul></td><td><img src="http://i2.ztat.net/large/CL/61/1N/00/1B/11/CL611N001-B11@12.jpg" height="150px;" /></td><td><ul><li><b>category = shoes_pair</b></li><li>color = beige</li><li>occasion = business_casual</li></ul></td></tr></tbody></table></td></tr>
-<tr><td><img src="https://www.instagram.com/p/BgDQHclBejN/media/?size=t"/></td><td><table><tbody><tr><td><img src="http://i1.ztat.net/large/H4/45/1B/02/AQ/11/H4451B02A-Q11@1.1.jpg" height="150px;" /></td><td><ul><li><b>category = accessories/hats_beanies</b></li><li>aesthetic = bohemian</li><li>occasion = vacation</li></ul></td><td><img src="http://i1.ztat.net/large/CO/12/1G/05/DQ/11/CO121G05D-Q11@1.1.jpg" height="150px;" /></td><td><ul><li><b>category = jackets_coats</b></li><li>color = black</li><li>length = normal</li><li>neck_type = lapel_collar</li><li>occasion = business_casual</li><li>pattern = solid</li><li>sleeve_length = long</li><li>type = leather</li></ul></td><td><img src="https://mosaic01.ztat.net/vgs/media/large/WE/B2/1B/00/BQ/11/WEB21B00B-Q11@12.jpg" height="150px;" /></td><td><ul><li><b>category = female/skirts</b></li><li>color = black</li><li>length = mini</li><li>occasion = casual</li><li>pattern = solid</li><li>silhouette = a_line</li></ul></td><td><img src="http://i1.ztat.net/large/NA/A2/1E/02/2Q/11/NAA21E022-Q11@11.png" height="150px;" /></td><td><ul><li><b>category = tops</b></li><li>length = normal</li><li>occasion = night_out</li><li>silhouette = loose</li><li>sleeve_length = sleeveless</li><li>type = tank-top</li></ul></td></tr></tbody></table></td></tr>
-<tr><td><img src="https://www.instagram.com/p/BgDY25enDKF/media/?size=t"/></td><td><table><tbody><tr><td><img src="https://mosaic01.ztat.net/vgs/media/large/QU/15/2K/00/BC/11/QU152K00B-C11@1.1.jpg" height="150px;" /></td><td><ul><li><b>category = accessories/eyewear</b></li><li>frame = brow-bar</li><li>style = aviator</li></ul></td><td><img src="http://i1.ztat.net/large/JO/92/2A/01/MQ/11/JO922A01M-Q11@14.jpg" height="150px;" /></td><td><ul><li><b>category = jackets_coats</b></li><li>aesthetic = tailored</li><li>length = normal</li><li>neck_type = lapel_collar</li><li>occasion = business_casual</li><li>pattern = solid</li><li>sleeve_length = long</li><li>type = blazer</li></ul></td><td><img src="http://i1.ztat.net/large/AD/11/5O/07/FA/11/AD115O07F-A11@1.1.jpg" height="150px;" /></td><td><ul><li><b>category = shoes</b></li><li>aesthetic = athletic</li><li>ankle_height = low-top</li><li>fastener = tie</li><li>heel_height = flat</li><li>occasion = casual</li><li>toe_type = round</li></ul></td><td><img src="http://i1.ztat.net/large/4B/E2/1G/03/GM/11/4BE21G03G-M11@2.png" height="150px;" /></td><td><ul><li><b>category = jackets_coats</b></li><li>length = normal</li><li>neck_type = lapel_collar</li><li>occasion = business_casual</li><li>sleeve_length = long</li><li>type = blazer</li></ul></td><td><img src="http://i1.ztat.net/large/BA/11/2M/00/8Q/11/BA112M008-Q11@12.jpg" height="150px;" /></td><td><ul><li><b>category = shoes</b></li><li>ankle_height = low-top</li><li>fastener = tie</li><li>heel_height = flat</li><li>occasion = casual</li><li>toe_type = round</li><li>type = oxford</li></ul></td><td><img src="http://i1.ztat.net/large/RI/11/2M/00/CQ/11/RI112M00C-Q11@12.jpg" height="150px;" /></td><td><ul><li><b>category = shoes</b></li><li>ankle_height = low-top</li><li>fastener = tie</li><li>heel_height = flat</li><li>occasion = casual</li><li>toe_type = round</li><li>type = oxford</li></ul></td><td><img src="http://i1.ztat.net/large/NO/81/1S/01/JA/11/NO811S01J-A11@14.jpg" height="150px;" /></td><td><ul><li><b>category = shoes</b></li><li>aesthetic = street</li><li>ankle_height = low-top</li><li>color = white</li><li>fastener = velcroe</li><li>heel_height = flat</li><li>occasion = casual</li><li>toe_type = round</li><li>type = casual_sneakers</li></ul></td><td><img src="http://i1.ztat.net/large/P0/G5/1H/0A/NJ/11/P0G51H0AN-J11@16.jpg" height="150px;" /></td><td><ul><li><b>category = accessories/bags</b></li><li>leather_type = woven</li><li>occasion = night_out</li><li>size = medium</li><li>strap_type = chain</li><li>type = shoulder-bag</li></ul></td><td><img src="http://i1.ztat.net/large/BM/91/1A/00/EA/11/BM911A00E-A11@15.jpg" height="150px;" /></td><td><ul><li><b>category = shoes</b></li><li>aesthetic = athletic</li><li>ankle_height = low-top</li><li>fastener = tie</li><li>heel_height = flat</li><li>occasion = casual</li><li>toe_type = round</li><li>type = casual_sneakers</li></ul></td><td><img src="http://i1.ztat.net/large/K4/42/2E/00/NQ/11/K4422E00N-Q11@17.jpg" height="150px;" /></td><td><ul><li><b>category = denim_pants</b></li><li>aesthetic = athletic</li><li>cut = slim</li><li>occasion = workout</li><li>pattern = solid</li><li>type = sweatpants</li></ul></td><td><img src="http://i1.ztat.net/large/VI/F2/1C/00/GA/11/VIF21C00G-A11@12.png" height="150px;" /></td><td><ul><li><b>category = female/swimwear</b></li><li>occasion = casual</li><li>pattern = striped</li></ul></td></tr></tbody></table></td></tr>
+                    <tr>
+<td><img src="https://www.instagram.com/p/BgCbr3ZlAd8/media/?size=t"></td>
+<td><table><tbody><tr>
+<td><img src="http://i1.ztat.net/large/PE/12/1N/09/EK/11/PE121N09E-K11@11.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = denim_pants</b></li>
+<li>color = light_blue</li>
+<li>cut = slim</li>
+<li>denim_detail = washed</li>
+<li>occasion = casual</li>
+<li>pattern = solid</li>
+<li>type = jeans</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/FA/D1/1N/01/LA/11/FAD11N01L-A11@14.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = shoes</b></li>
+<li>aesthetic = edgy</li>
+<li>ankle_height = high-top</li>
+<li>fastener = zipper</li>
+<li>heel_height = high</li>
+<li>occasion = night_out</li>
+<li>toe_type = round</li>
+<li>type = chelsea_boots</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/FS/15/1H/09/SI/11/FS151H09S-I11@2.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = accessories/bags</b></li>
+<li>closer = zipper</li>
+<li>leather_type = woven</li>
+<li>occasion = business_casual</li>
+<li>size = xl</li>
+<li>strap_type = crossbody</li>
+<li>type = duffel</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/WE/B2/1D/01/QQ/11/WEB21D01Q-Q11@2.png" height="150px;"></td>
+<td><ul>
+<li><b>category = tops</b></li>
+<li>aesthetic = athletic</li>
+<li>color = black</li>
+<li>length = normal</li>
+<li>neck_type = round</li>
+<li>silhouette = straight</li>
+<li>sleeve_length = sleeveless</li>
+<li>type = tank-top</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/S0/F1/1N/00/KA/11/S0F11N00K-A11@14.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = shoes</b></li>
+<li>aesthetic = edgy</li>
+<li>ankle_height = high-top</li>
+<li>fastener = zipper</li>
+<li>heel_height = high</li>
+<li>occasion = business_casual</li>
+<li>toe_type = square</li>
+<li>type = chelsea_boots</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/CO/12/1U/01/KB/11/CO121U01K-B11@4.1.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = jackets_coats</b></li>
+<li>length = long</li>
+<li>neck_type = hooded</li>
+<li>occasion = casual</li>
+<li>pattern = solid</li>
+<li>sleeve_length = three_quarter</li>
+<li>type = parka</li>
+</ul></td>
+</tr></tbody></table></td>
+</tr>
+<tr>
+<td><img src="https://www.instagram.com/p/BgCck4-HFhu/media/?size=t"></td>
+<td><table><tbody><tr>
+<td><img src="http://i1.ztat.net/large/DU/51/1B/0A/3D/11/DU511B0A3-D11@12.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = shoes</b></li>
+<li>aesthetic = bohemian</li>
+<li>heel_height = high</li>
+<li>heel_type = stiletto</li>
+<li>occasion = night_out</li>
+<li>toe_type = pointed</li>
+<li>type = pumps</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/JL/12/2E/02/PC/11/JL122E02P-C11@12.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = denim_pants</b></li>
+<li>cut = classic</li>
+<li>occasion = formal</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/KM/52/1G/00/GC/11/KM521G00G-C11@2.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = jackets_coats</b></li>
+<li>length = normal</li>
+<li>neck_type = lapel_collar</li>
+<li>occasion = business_casual</li>
+<li>pattern = checkered</li>
+<li>sleeve_length = long</li>
+<li>type = blazer</li>
+</ul></td>
+</tr></tbody></table></td>
+</tr>
+<tr>
+<td><img src="https://www.instagram.com/p/BgCeMSpDmot/media/?size=t"></td>
+<td><table><tbody><tr>
+<td><img src="http://i1.ztat.net/large/PY/52/2O/02/5A/11/PY522O025-A11@10.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = tops</b></li>
+<li>aesthetic = athletic</li>
+<li>color = white</li>
+<li>length = normal</li>
+<li>neck_type = round</li>
+<li>occasion = casual</li>
+<li>silhouette = slim_fit</li>
+<li>sleeve_length = short</li>
+<li>type = t-shirt</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/OS/32/2D/08/HK/11/OS322D08H-K11@4.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = male/shirts</b></li>
+<li>aesthetic = heritage</li>
+<li>length = normal</li>
+<li>neck_type = collared</li>
+<li>pattern = plaid</li>
+<li>silhouette = slim_fit</li>
+<li>sleeve_length = long</li>
+<li>type = shirt</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/H1/42/2G/00/0K/11/H1422G000-K11@17.1.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = denim_pants</b></li>
+<li>cut = straight</li>
+<li>denim_detail = plain</li>
+<li>occasion = business_casual</li>
+<li>pattern = solid</li>
+<li>type = jeans</li>
+</ul></td>
+<td><img src="https://mosaic01.ztat.net/vgs/media/large/QU/15/2K/00/5Q/11/QU152K005-Q11@1.1.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = accessories/eyewear</b></li>
+<li>frame = full-frame</li>
+<li>style = square</li>
+</ul></td>
+</tr></tbody></table></td>
+</tr>
+<tr>
+<td><img src="https://www.instagram.com/p/BgCeN9XFxv3/media/?size=t"></td>
+<td><table><tbody><tr>
+<td><img src="http://i1.ztat.net/large/L8/85/1H/01/XJ/11/L8851H01X-J11@13.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = accessories/bags</b></li>
+<li>aesthetic = bohemian</li>
+<li>leather_type = woven</li>
+<li>occasion = vacation</li>
+<li>size = large</li>
+<li>strap_type = double_strap</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/ZW/32/1E/01/3M/11/ZW321E013-M11@13.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = tops</b></li>
+<li>aesthetic = heritage</li>
+<li>color = light_green</li>
+<li>length = normal</li>
+<li>neck_type = collared</li>
+<li>occasion = casual</li>
+<li>pattern = plaid</li>
+<li>silhouette = straight</li>
+<li>sleeve_length = short</li>
+<li>type = shirt</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/ST/H2/1A/04/MH/11/STH21A04M-H11@12.1.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = denim_pants</b></li>
+<li>cut = flare</li>
+<li>type = corduroy</li>
+</ul></td>
+</tr></tbody></table></td>
+</tr>
+<tr>
+<td><img src="https://www.instagram.com/p/BgCkN1fnnG0/media/?size=t"></td>
+<td><table><tbody><tr>
+<td><img src="http://i1.ztat.net/large/M3/21/1A/00/IJ/11/M3211A00I-J11@2.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = shoes</b></li>
+<li>aesthetic = bohemian</li>
+<li>fastener = buckle</li>
+<li>heel_height = high</li>
+<li>heel_type = stiletto</li>
+<li>occasion = night_out</li>
+<li>toe_type = open</li>
+<li>type = heeled_sandals</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/IV/32/1T/00/5A/11/IV321T005-A11@6.1.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = female/jumpsuits_playsuits</b></li>
+<li>occasion = night_out</li>
+<li>pattern = solid</li>
+<li>sleeve_length = short</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/NL/72/1D/02/MA/11/NL721D02M-A11@11.2.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = tops</b></li>
+<li>color = white</li>
+<li>length = normal</li>
+<li>occasion = casual</li>
+<li>silhouette = straight</li>
+<li>sleeve_length = short</li>
+<li>type = t-shirt</li>
+</ul></td>
+</tr></tbody></table></td>
+</tr>
+<tr>
+<td><img src="https://www.instagram.com/p/BgCmd2SHILd/media/?size=t"></td>
+<td><table><tbody><tr>
+<td><img src="http://i1.ztat.net/large/SU/21/2G/00/HQ/12/SU212G00H-Q12@14.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = shoes</b></li>
+<li>fastener = velcroe</li>
+<li>heel_height = flat</li>
+<li>occasion = vacation</li>
+<li>toe_type = open</li>
+<li>type = slip_on_sandal</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/M3/I2/2G/00/PQ/11/M3I22G00P-Q11@20.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = denim_pants</b></li>
+<li>aesthetic = athletic</li>
+<li>length = normal</li>
+<li>occasion = workout</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/RA/25/2K/00/XQ/11/RA252K00X-Q11@7.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = accessories/eyewear</b></li>
+<li>aesthetic = classic</li>
+<li>frame = brow-bar</li>
+<li>occasion = vacation</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/TO/72/2O/0N/YK/11/TO722O0NY-K11@15.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = tops</b></li>
+<li>aesthetic = athletic</li>
+<li>color = light_turquoise</li>
+<li>length = normal</li>
+<li>neck_type = v_neck</li>
+<li>occasion = casual</li>
+<li>silhouette = slim_fit</li>
+<li>sleeve_length = short</li>
+<li>type = t-shirt</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/P1/45/1H/03/YF/11/P1451H03Y-F11@13.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = accessories/bags</b></li>
+<li>closer = zipper</li>
+<li>occasion = business_casual</li>
+<li>size = small</li>
+<li>strap_type = no_handle</li>
+<li>type = clutch</li>
+</ul></td>
+</tr></tbody></table></td>
+</tr>
+<tr>
+<td><img src="https://www.instagram.com/p/BgCnxFjHfYJ/media/?size=t"></td>
+<td><table><tbody><tr>
+<td><img src="http://i1.ztat.net/large/IJ/02/1H/00/0B/11/IJ021H000-B11@13.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = jackets_coats</b></li>
+<li>aesthetic = athletic</li>
+<li>color = light_brown</li>
+<li>length = long</li>
+<li>neck_type = hooded</li>
+<li>occasion = casual</li>
+<li>pattern = solid</li>
+<li>sleeve_length = long</li>
+<li>type = parka</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/6F/R2/1N/02/LK/12/6FR21N02L-K12@12.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = denim_pants</b></li>
+<li>cut = skinny</li>
+<li>denim_detail = washed</li>
+<li>occasion = casual</li>
+<li>pattern = solid</li>
+<li>type = jeans</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/P1/21/2K/00/7C/11/P1212K007-C11@12.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = shoes</b></li>
+<li>aesthetic = street</li>
+<li>ankle_height = high-top</li>
+<li>fastener = tie</li>
+<li>heel_height = flat</li>
+<li>occasion = casual</li>
+<li>toe_type = round</li>
+<li>type = lace_up_boots</li>
+</ul></td>
+</tr></tbody></table></td>
+</tr>
+<tr>
+<td><img src="https://www.instagram.com/p/BgCsV0EB6Iw/media/?size=t"></td>
+<td><table><tbody><tr>
+<td><img src="http://i1.ztat.net/large/BJ/01/1B/02/RO/11/BJ011B02R-O11@11.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = shoes</b></li>
+<li>aesthetic = edgy</li>
+<li>heel_height = high</li>
+<li>heel_type = stiletto</li>
+<li>occasion = night_out</li>
+<li>toe_type = pointed</li>
+<li>type = pumps</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/N1/42/9C/00/GB/11/N1429C00G-B11@12.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = denim_pants</b></li>
+<li>cut = wide_leg</li>
+<li>occasion = business_casual</li>
+<li>pattern = solid</li>
+<li>type = chinos</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/N3/22/1U/00/9C/11/N3221U009-C11@2.png" height="150px;"></td>
+<td><ul>
+<li><b>category = jackets_coats</b></li>
+<li>length = crop</li>
+<li>neck_type = lapel_collar</li>
+<li>occasion = business_casual</li>
+<li>pattern = solid</li>
+<li>sleeve_length = long</li>
+<li>type = blazer</li>
+</ul></td>
+</tr></tbody></table></td>
+</tr>
+<tr>
+<td><img src="https://www.instagram.com/p/BgCugtGlIGU/media/?size=t"></td>
+<td><table><tbody><tr>
+<td><img src="http://i1.ztat.net/large/PO/N2/1G/00/0J/11/PON21G000-J11@14.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = jackets_coats</b></li>
+<li>color = dark_green</li>
+<li>length = long</li>
+<li>neck_type = lapel_collar</li>
+<li>occasion = casual</li>
+<li>pattern = solid</li>
+<li>sleeve_length = long</li>
+<li>type = trench</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/DU/51/1N/04/FQ/11/DU511N04F-Q11@11.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = shoes</b></li>
+<li>aesthetic = edgy</li>
+<li>fastener = zipper</li>
+<li>heel_height = high</li>
+<li>heel_type = cone</li>
+<li>occasion = night_out</li>
+<li>toe_type = pointed</li>
+<li>type = pumps</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/TE/45/1H/09/GQ/11/TE451H09G-Q11@14.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = accessories/bags</b></li>
+<li>occasion = business_casual</li>
+<li>size = medium</li>
+<li>strap_type = double-handle</li>
+<li>type = handbag</li>
+</ul></td>
+</tr></tbody></table></td>
+</tr>
+<tr>
+<td><img src="https://www.instagram.com/p/BgCxGnWn6hb/media/?size=t"></td>
+<td><table><tbody><tr>
+<td><img src="http://i1.ztat.net/large/LI/K2/1C/00/4Q/11/LIK21C004-Q11@12.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = female/dresses</b></li>
+<li>color = black</li>
+<li>length = midi</li>
+<li>occasion = night_out</li>
+<li>silhouette = sheath</li>
+<li>sleeve_length = sleeveless</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/GL/91/1N/02/JQ/11/GL911N02J-Q11@14.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = shoes</b></li>
+<li>aesthetic = edgy</li>
+<li>ankle_height = high-top</li>
+<li>color = black</li>
+<li>fastener = slip-on</li>
+<li>heel_height = medium</li>
+<li>occasion = night_out</li>
+<li>toe_type = pointed</li>
+<li>type = chelsea_boots</li>
+</ul></td>
+</tr></tbody></table></td>
+</tr>
+<tr>
+<td><img src="https://www.instagram.com/p/BgCxrcwFm5F/media/?size=t"></td>
+<td><table><tbody><tr>
+<td><img src="http://i1.ztat.net/large/NM/02/2D/00/TQ/11/NM022D00T-Q11@14.1.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = male/shirts</b></li>
+<li>aesthetic = heritage</li>
+<li>length = normal</li>
+<li>neck_type = collared</li>
+<li>occasion = casual</li>
+<li>pattern = floral</li>
+<li>silhouette = slim_fit</li>
+<li>sleeve_length = long</li>
+<li>type = shirt</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/SE/62/2D/0Q/1K/11/SE622D0Q1-K11@12.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = male/shirts</b></li>
+<li>aesthetic = heritage</li>
+<li>color = blue</li>
+<li>length = normal</li>
+<li>neck_type = collared</li>
+<li>occasion = casual</li>
+<li>pattern = solid</li>
+<li>silhouette = slim_fit</li>
+<li>sleeve_length = long</li>
+<li>type = shirt</li>
+</ul></td>
+</tr></tbody></table></td>
+</tr>
+<tr>
+<td><img src="https://www.instagram.com/p/BgD0vBrlLSI/media/?size=t"></td>
+<td><table><tbody><tr>
+<td><img src="http://i1.ztat.net/large/PO/25/1K/00/5O/11/PO251K005-O11@6.1.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = accessories/eyewear</b></li>
+<li>frame = full-frame</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/JL/12/1A/02/3O/11/JL121A023-O11@1.1.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = denim_pants</b></li>
+<li>aesthetic = heritage</li>
+<li>pattern = plaid</li>
+<li>type = leggings</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/BH/92/1U/00/BA/11/BH921U00B-A11@5.png" height="150px;"></td>
+<td><ul>
+<li><b>category = jackets_coats</b></li>
+<li>aesthetic = athletic</li>
+<li>length = crop</li>
+<li>neck_type = hooded</li>
+<li>occasion = casual</li>
+<li>pattern = marl</li>
+<li>sleeve_length = long</li>
+<li>type = knit</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/M3/I5/1H/01/XO/11/M3I51H01X-O11@1.1.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = accessories/bags</b></li>
+<li>closer = zipper</li>
+<li>color = light_brown</li>
+<li>leather_type = woven</li>
+<li>occasion = business_casual</li>
+<li>size = small</li>
+<li>strap_type = single_strap</li>
+</ul></td>
+</tr></tbody></table></td>
+</tr>
+<tr>
+<td><img src="https://www.instagram.com/p/BgD5ZK-FcH5/media/?size=t"></td>
+<td><table><tbody><tr>
+<td><img src="http://i1.ztat.net/large/GS/95/2M/00/EQ/12/GS952M00E-Q12@7.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = accessories/watches</b></li>
+<li>occasion = casual</li>
+</ul></td>
+<td><img src="https://mosaic01.ztat.net/vgs/media/large/DI/15/2M/01/VF/11/DI152M01V-F11@5.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = accessories/watches</b></li>
+<li>occasion = night_out</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/ME/14/2A/0A/FH/11/ME142A0AF-H11@11.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = shoes</b></li>
+<li>aesthetic = athletic</li>
+<li>ankle_height = low-top</li>
+<li>fastener = tie</li>
+<li>heel_height = flat</li>
+<li>occasion = workout</li>
+<li>toe_type = round</li>
+<li>type = running_shoes</li>
+</ul></td>
+<td><img src="http://img1.ztat.net/large/SZ/75/1M/00/4D/11/SZ751M004-D11@1.1.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = accessories/watches</b></li>
+<li>occasion = formal</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/FI/02/1I/01/UK/11/FI021I01U-K11@12.png" height="150px;"></td>
+<td><ul>
+<li><b>category = jumpers_cardigans</b></li>
+<li>length = normal</li>
+<li>neck_type = boatneck</li>
+<li>occasion = casual</li>
+<li>pattern = striped</li>
+<li>silhouette = straight</li>
+<li>sleeve_length = long</li>
+<li>type = sweater</li>
+</ul></td>
+<td><img src="https://mosaic01.ztat.net/vgs/media/large/TI/15/2M/00/KO/11/TI152M00K-O11@2.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = accessories/watches</b></li>
+<li>occasion = casual</li>
+</ul></td>
+</tr></tbody></table></td>
+</tr>
+<tr>
+<td><img src="https://www.instagram.com/p/BgD6ST0gCvv/media/?size=t"></td>
+<td><table><tbody><tr>
+<td><img src="http://i1.ztat.net/large/B3/85/1H/05/FO/11/B3851H05F-O11@2.1.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = accessories/bags</b></li>
+<li>closer = zipper</li>
+<li>leather_type = pebbled</li>
+<li>occasion = business_casual</li>
+<li>size = small</li>
+<li>strap_type = crossbody</li>
+<li>type = messenger</li>
+</ul></td>
+</tr></tbody></table></td>
+</tr>
+<tr>
+<td><img src="https://www.instagram.com/p/BgD78gKHF60/media/?size=t"></td>
+<td><table><tbody><tr>
+<td><img src="http://i1.ztat.net/large/ST/H1/1E/00/ST/11/STH11E00S-T11@1.1.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = shoes</b></li>
+<li>aesthetic = street</li>
+<li>ankle_height = low-top</li>
+<li>fastener = tie</li>
+<li>heel_height = flat</li>
+<li>occasion = casual</li>
+<li>toe_type = round</li>
+<li>type = slip_on_sneakers</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/DO/A2/1N/00/RK/11/DOA21N00R-K11@12.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = denim_pants</b></li>
+<li>aesthetic = athletic</li>
+<li>color = dark_blue</li>
+<li>cut = skinny</li>
+<li>denim_detail = distressed</li>
+<li>occasion = casual</li>
+<li>pattern = solid</li>
+<li>type = jeans</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/BB/15/1H/01/IB/11/BB151H01I-B11@13.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = accessories/bags</b></li>
+<li>aesthetic = tailored</li>
+<li>closer = zipper</li>
+<li>color = light_brown</li>
+<li>leather_type = pebbled</li>
+<li>occasion = business_casual</li>
+<li>size = medium</li>
+<li>strap_type = convertible</li>
+<li>type = handbag</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/M3/J2/1D/00/7A/11/M3J21D007-A11@9.1.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = tops</b></li>
+<li>aesthetic = bohemian</li>
+<li>length = normal</li>
+<li>occasion = casual</li>
+<li>pattern = striped</li>
+<li>silhouette = straight</li>
+<li>sleeve_length = short</li>
+<li>type = t-shirt</li>
+</ul></td>
+</tr></tbody></table></td>
+</tr>
+<tr>
+<td><img src="https://www.instagram.com/p/BgD8jWjDzAJ/media/?size=t"></td>
+<td><table><tbody><tr>
+<td><img src="http://i1.ztat.net/large/CI/12/2I/00/0Q/11/CI122I000-Q11@14.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = jackets_coats</b></li>
+<li>aesthetic = athletic</li>
+<li>color = dark_grey</li>
+<li>length = normal</li>
+<li>neck_type = high_stand_collar</li>
+<li>occasion = casual</li>
+<li>pattern = solid</li>
+<li>sleeve_length = sleeveless</li>
+<li>type = vests</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/LO/81/1C/00/67/08/LO811C006-708@1.1.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = shoes</b></li>
+<li>aesthetic = edgy</li>
+<li>ankle_height = high-top</li>
+<li>color = dark_red</li>
+<li>fastener = zipper</li>
+<li>heel_height = medium</li>
+<li>occasion = business_casual</li>
+<li>toe_type = square</li>
+<li>type = chelsea_boots</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/ED/02/2T/00/VQ/11/ED022T00V-Q11@1.1.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = jackets_coats</b></li>
+<li>aesthetic = heritage</li>
+<li>length = normal</li>
+<li>neck_type = high_stand_collar</li>
+<li>occasion = casual</li>
+<li>sleeve_length = long</li>
+<li>type = denim</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/JU/62/1A/01/SD/11/JU621A01S-D11@12.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = denim_pants</b></li>
+<li>aesthetic = athletic</li>
+<li>cut = skinny</li>
+<li>occasion = workout</li>
+<li>type = leggings</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/AN/62/1I/08/JB/11/AN621I08J-B11@2.png" height="150px;"></td>
+<td><ul>
+<li><b>category = jumpers_cardigans</b></li>
+<li>aesthetic = classic</li>
+<li>color = light_grey</li>
+<li>length = normal</li>
+<li>neck_type = turtle</li>
+<li>occasion = casual</li>
+<li>pattern = marl</li>
+<li>silhouette = straight</li>
+<li>sleeve_length = long</li>
+<li>type = sweater</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/PE/31/1N/02/BA/11/PE311N02B-A11@21.1.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = shoes</b></li>
+<li>aesthetic = street</li>
+<li>ankle_height = high-top</li>
+<li>fastener = slip-on</li>
+<li>heel_height = flat</li>
+<li>occasion = casual</li>
+<li>toe_type = round</li>
+<li>type = slip_on_sneakers</li>
+</ul></td>
+</tr></tbody></table></td>
+</tr>
+<tr>
+<td><img src="https://www.instagram.com/p/BgDHOhAl4qJ/media/?size=t"></td>
+<td><table><tbody><tr>
+<td><img src="http://i1.ztat.net/large/ON/32/1G/0N/4J/11/ON321G0N4-J11@12.png" height="150px;"></td>
+<td><ul>
+<li><b>category = jackets_coats</b></li>
+<li>aesthetic = athletic</li>
+<li>color = light_pink</li>
+<li>length = normal</li>
+<li>neck_type = hooded</li>
+<li>occasion = business_casual</li>
+<li>pattern = solid</li>
+<li>sleeve_length = long</li>
+<li>type = leather</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/VE/02/1N/00/3K/11/VE021N003-K11@12.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = denim_pants</b></li>
+<li>color = light_blue</li>
+<li>cut = slim</li>
+<li>denim_detail = washed</li>
+<li>occasion = casual</li>
+<li>pattern = solid</li>
+<li>type = jeans</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/TT/91/1A/00/YA/11/TT911A00Y-A11@14.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = shoes</b></li>
+<li>aesthetic = street</li>
+<li>ankle_height = low-top</li>
+<li>color = white</li>
+<li>heel_height = flat</li>
+<li>occasion = casual</li>
+<li>toe_type = round</li>
+<li>type = casual_sneakers</li>
+</ul></td>
+</tr></tbody></table></td>
+</tr>
+<tr>
+<td><img src="https://www.instagram.com/p/BgDJnJDj_i7/media/?size=t"></td>
+<td><table><tbody><tr>
+<td><img src="http://i1.ztat.net/large/SA/32/2Q/01/ZA/11/SA322Q01Z-A11@2.1.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = jumpers_cardigans</b></li>
+<li>aesthetic = classic</li>
+<li>color = light_beige</li>
+<li>length = normal</li>
+<li>neck_type = round</li>
+<li>occasion = casual</li>
+<li>pattern = marl</li>
+<li>silhouette = straight</li>
+<li>sleeve_length = long</li>
+<li>type = sweater</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/TP/82/2T/01/7Q/11/TP822T017-Q11@10.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = jackets_coats</b></li>
+<li>color = grey</li>
+<li>length = long</li>
+<li>neck_type = lapel_collar</li>
+<li>occasion = business_casual</li>
+<li>pattern = herringbone</li>
+<li>sleeve_length = three_quarter</li>
+<li>type = knit</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/DP/52/1A/0D/LK/11/DP521A0DL-K11@4.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = denim_pants</b></li>
+<li>aesthetic = tailored</li>
+<li>cut = classic</li>
+<li>occasion = formal</li>
+<li>pattern = plaid</li>
+<li>type = suit_pants</li>
+</ul></td>
+<td><img src="http://i2.ztat.net/large/CL/61/1N/00/1B/11/CL611N001-B11@12.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = shoes_pair</b></li>
+<li>color = beige</li>
+<li>occasion = business_casual</li>
+</ul></td>
+</tr></tbody></table></td>
+</tr>
+<tr>
+<td><img src="https://www.instagram.com/p/BgDQHclBejN/media/?size=t"></td>
+<td><table><tbody><tr>
+<td><img src="http://i1.ztat.net/large/H4/45/1B/02/AQ/11/H4451B02A-Q11@1.1.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = accessories/hats_beanies</b></li>
+<li>aesthetic = bohemian</li>
+<li>occasion = vacation</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/CO/12/1G/05/DQ/11/CO121G05D-Q11@1.1.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = jackets_coats</b></li>
+<li>color = black</li>
+<li>length = normal</li>
+<li>neck_type = lapel_collar</li>
+<li>occasion = business_casual</li>
+<li>pattern = solid</li>
+<li>sleeve_length = long</li>
+<li>type = leather</li>
+</ul></td>
+<td><img src="https://mosaic01.ztat.net/vgs/media/large/WE/B2/1B/00/BQ/11/WEB21B00B-Q11@12.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = female/skirts</b></li>
+<li>color = black</li>
+<li>length = mini</li>
+<li>occasion = casual</li>
+<li>pattern = solid</li>
+<li>silhouette = a_line</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/NA/A2/1E/02/2Q/11/NAA21E022-Q11@11.png" height="150px;"></td>
+<td><ul>
+<li><b>category = tops</b></li>
+<li>length = normal</li>
+<li>occasion = night_out</li>
+<li>silhouette = loose</li>
+<li>sleeve_length = sleeveless</li>
+<li>type = tank-top</li>
+</ul></td>
+</tr></tbody></table></td>
+</tr>
+<tr>
+<td><img src="https://www.instagram.com/p/BgDY25enDKF/media/?size=t"></td>
+<td><table><tbody><tr>
+<td><img src="https://mosaic01.ztat.net/vgs/media/large/QU/15/2K/00/BC/11/QU152K00B-C11@1.1.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = accessories/eyewear</b></li>
+<li>frame = brow-bar</li>
+<li>style = aviator</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/JO/92/2A/01/MQ/11/JO922A01M-Q11@14.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = jackets_coats</b></li>
+<li>aesthetic = tailored</li>
+<li>length = normal</li>
+<li>neck_type = lapel_collar</li>
+<li>occasion = business_casual</li>
+<li>pattern = solid</li>
+<li>sleeve_length = long</li>
+<li>type = blazer</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/AD/11/5O/07/FA/11/AD115O07F-A11@1.1.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = shoes</b></li>
+<li>aesthetic = athletic</li>
+<li>ankle_height = low-top</li>
+<li>fastener = tie</li>
+<li>heel_height = flat</li>
+<li>occasion = casual</li>
+<li>toe_type = round</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/4B/E2/1G/03/GM/11/4BE21G03G-M11@2.png" height="150px;"></td>
+<td><ul>
+<li><b>category = jackets_coats</b></li>
+<li>length = normal</li>
+<li>neck_type = lapel_collar</li>
+<li>occasion = business_casual</li>
+<li>sleeve_length = long</li>
+<li>type = blazer</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/BA/11/2M/00/8Q/11/BA112M008-Q11@12.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = shoes</b></li>
+<li>ankle_height = low-top</li>
+<li>fastener = tie</li>
+<li>heel_height = flat</li>
+<li>occasion = casual</li>
+<li>toe_type = round</li>
+<li>type = oxford</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/RI/11/2M/00/CQ/11/RI112M00C-Q11@12.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = shoes</b></li>
+<li>ankle_height = low-top</li>
+<li>fastener = tie</li>
+<li>heel_height = flat</li>
+<li>occasion = casual</li>
+<li>toe_type = round</li>
+<li>type = oxford</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/NO/81/1S/01/JA/11/NO811S01J-A11@14.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = shoes</b></li>
+<li>aesthetic = street</li>
+<li>ankle_height = low-top</li>
+<li>color = white</li>
+<li>fastener = velcroe</li>
+<li>heel_height = flat</li>
+<li>occasion = casual</li>
+<li>toe_type = round</li>
+<li>type = casual_sneakers</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/P0/G5/1H/0A/NJ/11/P0G51H0AN-J11@16.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = accessories/bags</b></li>
+<li>leather_type = woven</li>
+<li>occasion = night_out</li>
+<li>size = medium</li>
+<li>strap_type = chain</li>
+<li>type = shoulder-bag</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/BM/91/1A/00/EA/11/BM911A00E-A11@15.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = shoes</b></li>
+<li>aesthetic = athletic</li>
+<li>ankle_height = low-top</li>
+<li>fastener = tie</li>
+<li>heel_height = flat</li>
+<li>occasion = casual</li>
+<li>toe_type = round</li>
+<li>type = casual_sneakers</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/K4/42/2E/00/NQ/11/K4422E00N-Q11@17.jpg" height="150px;"></td>
+<td><ul>
+<li><b>category = denim_pants</b></li>
+<li>aesthetic = athletic</li>
+<li>cut = slim</li>
+<li>occasion = workout</li>
+<li>pattern = solid</li>
+<li>type = sweatpants</li>
+</ul></td>
+<td><img src="http://i1.ztat.net/large/VI/F2/1C/00/GA/11/VIF21C00G-A11@12.png" height="150px;"></td>
+<td><ul>
+<li><b>category = female/swimwear</b></li>
+<li>occasion = casual</li>
+<li>pattern = striped</li>
+</ul></td>
+</tr></tbody></table></td>
+</tr>
 
                 </tbody>
 
@@ -59,8 +906,6 @@
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-                crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </body>
 </html>
